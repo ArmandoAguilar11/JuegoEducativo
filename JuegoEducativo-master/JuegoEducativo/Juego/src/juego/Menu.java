@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package juego;
-
+import Fuentes.Fuentes;
 /**
  *
  * @author Armando
@@ -14,8 +14,11 @@ public class Menu extends javax.swing.JFrame {
     /**
      * Creates new form Menu
      */
+    Fuentes tipoFuentes;
     public Menu() {
         initComponents();
+        tipoFuentes = new Fuentes();
+        jLabel1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 60));
     }
 
     /**

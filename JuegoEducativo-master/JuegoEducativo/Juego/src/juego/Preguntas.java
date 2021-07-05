@@ -5,6 +5,8 @@
  */
 package juego;
 
+import Fuentes.Fuentes;
+
 /**
  *
  * @author Armando
@@ -14,8 +16,11 @@ public class Preguntas extends javax.swing.JFrame {
     /**
      * Creates new form Preguntas
      */
+    Fuentes tipoFuentes;
     public Preguntas() {
         initComponents();
+        tipoFuentes = new Fuentes();
+        jLabel1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 24));       
     }
 
     /**
