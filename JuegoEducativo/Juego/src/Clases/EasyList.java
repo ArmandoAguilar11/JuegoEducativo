@@ -154,7 +154,9 @@ public class EasyList {
     obj.setD("&&");
     lista.add(obj);
     }   
-    
+    public ArrayList ver(){
+    return lista;
+    }
     /*public void getPre(){
         String space = "";
         for (int i = 0; i < lista.size(); i++) {
