@@ -5,6 +5,7 @@
  */
 package juego;
 
+import Clases.EasyList;
 import Fuentes.Fuentes;
 
 /**
@@ -18,11 +19,13 @@ public class Facil extends javax.swing.JFrame {
      */
     Fuentes tipoFuentes;
     
-    public Facil() {
-        
+    public Facil() {       
         initComponents();
         tipoFuentes = new Fuentes();
         jLabel1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 24));
+        EasyList li = new EasyList();
+        String pregunta = li.lista.get(1).getPregunta();
+        jLabel1.setText(pregunta);
     }
 
     /**

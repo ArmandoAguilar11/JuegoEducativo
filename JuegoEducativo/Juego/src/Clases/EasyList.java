@@ -1,11 +1,13 @@
 package Clases;
 
+
+import juego.*;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 
 public class EasyList {
-    ArrayList<Easy> lista = new ArrayList();
+    public ArrayList<Easy> lista = new ArrayList();
     
     public void pre(){
     Easy obj = new Easy();
@@ -145,7 +147,7 @@ public class EasyList {
     obj.setD("Ninguna de las anteriores");
     lista.add(obj);
     obj.setPregunta("¿ Cuál es el símbolo del operador AND?");
-    obj.setCorrecta("2000");
+    obj.setCorrecta("&&");
     obj.setA("AND");
     obj.setB("||");
     obj.setC("!");
@@ -153,7 +155,7 @@ public class EasyList {
     lista.add(obj);
     }   
     
-    public void getPre(){
+    /*public void getPre(){
         String space = "";
         for (int i = 0; i < lista.size(); i++) {
             space+="num"+(i+1)+"\n";
@@ -165,5 +167,5 @@ public class EasyList {
             space+="D: "+lista.get(i).getD()+"\n";
         }
         JOptionPane.showMessageDialog(null, space);
-    }
+    }*/
 }

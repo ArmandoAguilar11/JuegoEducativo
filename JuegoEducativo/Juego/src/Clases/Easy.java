@@ -1,6 +1,8 @@
 
 package Clases;
 
+import juego.*;
+
 
 public class Easy {
     private String pregunta;

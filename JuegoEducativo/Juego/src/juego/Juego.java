@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package juego;
-import Clases.EasyList;
 /**
  *
  * @author Armando
