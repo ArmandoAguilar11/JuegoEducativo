@@ -16,11 +16,11 @@ import javax.swing.JOptionPane;
  * @author Armando
  */
 public class Facil extends javax.swing.JFrame {
-
+    int index;
     /**
      * Creates new form Facil
      */
-    int puntos = 0; 
+    int puntos = 0;
     Fuentes tipoFuentes;
     ArrayList<Easy> lista = new ArrayList();
     public Facil() {       
@@ -209,46 +209,15 @@ public class Facil extends javax.swing.JFrame {
         obj.setD("&&");
         lista.add(obj);
         obj = null;
-        obj = new Easy();
-        String correcta; 
-        for (int i = 0; i < lista.size(); i++) {            
-        int index = (int)(Math.random()*lista.size());
-        correcta = lista.get(index).getCorrecta();
+        obj = new Easy();          
+        index = (int)(Math.random()*lista.size());
         jLabel1.setText(lista.get(index).getPregunta());
         jBRespuestaA.setText(lista.get(index).getA());
         jBRespuestaB.setText(lista.get(index).getB());
         jBRespuestaC.setText(lista.get(index).getC());
-        jBRespuestaD.setText(lista.get(index).getD());
-        comparar(index);
-        }   
+        jBRespuestaD.setText(lista.get(index).getD()); 
     }
-    void comparar(int param){
-        String correcta = lista.get(param).getCorrecta();
-        if (indice == null) {
-            
-        }
-        if (correcta == indice) {
-           JOptionPane.showMessageDialog(null, "Correcto");
-        }
-        else{
-            JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final();
-            p.setVisible(true);
-            this.setVisible(false);
-        }
-    }
-    /*void comparar(String param){
-        String correcta = lista.get().getCorrecta();
-        if (correcta == param) {
-            JOptionPane.showMessageDialog(null, "Correcto");
-        }
-        else{
-            JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final();
-            p.setVisible(true);
-            this.setVisible(false);
-        }
-    }*/
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -350,25 +319,113 @@ public class Facil extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    String indice = null;
+
     private void jBRespuestaAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaAActionPerformed
         String selected = jBRespuestaA.getText();
-        indice = selected;
+        String correcta = lista.get(index).getCorrecta();
+        if (selected == correcta) {
+            JOptionPane.showMessageDialog(null, "Correcto");           
+                index = (int)(Math.random()*lista.size());
+                jLabel1.setText(lista.get(index).getPregunta());
+                jBRespuestaA.setText(lista.get(index).getA());
+                jBRespuestaB.setText(lista.get(index).getB());
+                jBRespuestaC.setText(lista.get(index).getC());
+                jBRespuestaD.setText(lista.get(index).getD());
+                puntos++;
+                if (puntos >= 3) {
+                    JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Faciles");
+                    Intermedio p1 = new Intermedio();
+                    p1.setVisible(true);
+                    this.setVisible(false);
+                } 
+        }
+        else{
+        JOptionPane.showMessageDialog(null, "Incorrecto");
+            Final p = new Final();
+            p.setVisible(true);
+            this.setVisible(false);
+        }
     }//GEN-LAST:event_jBRespuestaAActionPerformed
 
     private void jBRespuestaBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaBActionPerformed
         String selected = jBRespuestaB.getText(); 
-        indice = selected;
+        String correcta = lista.get(index).getCorrecta();
+        if (selected == correcta) {
+            JOptionPane.showMessageDialog(null, "Correcto");          
+                index = (int)(Math.random()*lista.size());
+                jLabel1.setText(lista.get(index).getPregunta());
+                jBRespuestaA.setText(lista.get(index).getA());
+                jBRespuestaB.setText(lista.get(index).getB());
+                jBRespuestaC.setText(lista.get(index).getC());
+                jBRespuestaD.setText(lista.get(index).getD());
+                puntos++;
+                if (puntos >= 3) {
+                    JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Faciles");
+                    Intermedio p1 = new Intermedio();
+                    p1.setVisible(true);
+                    this.setVisible(false);
+                } 
+        }
+        else{
+        JOptionPane.showMessageDialog(null, "Incorrecto");
+            Final p = new Final();
+            p.setVisible(true);
+            this.setVisible(false);
+        }
     }//GEN-LAST:event_jBRespuestaBActionPerformed
 
     private void jBRespuestaCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaCActionPerformed
         String selected = jBRespuestaC.getText();
-        indice = selected;
+        String correcta = lista.get(index).getCorrecta();
+        if (selected == correcta) {
+            JOptionPane.showMessageDialog(null, "Correcto");           
+                index = (int)(Math.random()*lista.size());
+                jLabel1.setText(lista.get(index).getPregunta());
+                jBRespuestaA.setText(lista.get(index).getA());
+                jBRespuestaB.setText(lista.get(index).getB());
+                jBRespuestaC.setText(lista.get(index).getC());
+                jBRespuestaD.setText(lista.get(index).getD());
+                puntos++;
+                if (puntos >= 3) {
+                    JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Faciles");
+                    Intermedio p1 = new Intermedio();
+                    p1.setVisible(true);
+                    this.setVisible(false);
+                } 
+        }
+        else{
+        JOptionPane.showMessageDialog(null, "Incorrecto");
+            Final p = new Final();
+            p.setVisible(true);
+            this.setVisible(false);
+        }
     }//GEN-LAST:event_jBRespuestaCActionPerformed
 
     private void jBRespuestaDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaDActionPerformed
         String selected = jBRespuestaD.getText();   
-        indice = selected;
+        String correcta = lista.get(index).getCorrecta();
+        if (selected == correcta) {
+            JOptionPane.showMessageDialog(null, "Correcto");            
+                index = (int)(Math.random()*lista.size());
+                jLabel1.setText(lista.get(index).getPregunta());
+                jBRespuestaA.setText(lista.get(index).getA());
+                jBRespuestaB.setText(lista.get(index).getB());
+                jBRespuestaC.setText(lista.get(index).getC());
+                jBRespuestaD.setText(lista.get(index).getD());
+                puntos++;
+                if (puntos >= 3) {
+                    JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Faciles");
+                    Intermedio p1 = new Intermedio();
+                    p1.setVisible(true);
+                    this.setVisible(false);
+                } 
+        }
+        else{
+        JOptionPane.showMessageDialog(null, "Incorrecto");
+            Final p = new Final();
+            p.setVisible(true);
+            this.setVisible(false);
+        }
     }//GEN-LAST:event_jBRespuestaDActionPerformed
 
     /**
