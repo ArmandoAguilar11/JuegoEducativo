@@ -169,16 +169,21 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("!");
         obj.setD("&&");
         lista.add(obj);
-        jLabel1.setText(lista.get(1).getPregunta());
-        jBRespuestaA.setText(lista.get(1).getA());
-        jBRespuestaB.setText(lista.get(1).getB());
-        jBRespuestaC.setText(lista.get(1).getC());
-        jBRespuestaD.setText(lista.get(1).getD());
+        jLabel1.setText(lista.get(0).getPregunta());
+        jBRespuestaA.setText(lista.get(0).getA());
+        jBRespuestaB.setText(lista.get(0).getB());
+        jBRespuestaC.setText(lista.get(0).getC());
+        jBRespuestaD.setText(lista.get(0).getD());
     }
     void comparar(String param){
-        String correcta = lista.get(1).getCorrecta();
+        String correcta = lista.get(0).getCorrecta();
         if (correcta == param) {
             JOptionPane.showMessageDialog(null, "Correcto");
+            jLabel1.setText(lista.get(2).getPregunta());
+            jBRespuestaA.setText(lista.get(2).getA());
+            jBRespuestaB.setText(lista.get(2).getB());
+            jBRespuestaC.setText(lista.get(2).getC());
+            jBRespuestaD.setText(lista.get(2).getD());
         }
         else{
             JOptionPane.showMessageDialog(null, "Incorrecto");

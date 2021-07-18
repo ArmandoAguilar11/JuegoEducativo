@@ -5,6 +5,8 @@
  */
 package juego;
 
+import Fuentes.Fuentes;
+
 /**
  *
  * @author USUARIO
@@ -14,8 +16,11 @@ public class Reglas extends javax.swing.JFrame {
     /**
      * Creates new form Reglas
      */
+    Fuentes tipoFuentes;
     public Reglas() {
         initComponents();
+        tipoFuentes = new Fuentes();
+        jLabel3.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 36));     
     }
 
     /**
