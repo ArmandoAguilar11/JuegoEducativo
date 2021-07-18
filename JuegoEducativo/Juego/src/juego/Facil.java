@@ -6,7 +6,6 @@
 package juego;
 
 import Clases.Easy;
-import Clases.EasyList;
 import Fuentes.Fuentes;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -26,7 +25,7 @@ public class Facil extends javax.swing.JFrame {
     public Facil() {       
         initComponents();
         tipoFuentes = new Fuentes();
-        jLabel1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 24));
+        jLabel1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 36));
         Easy obj = new Easy();
         obj.setPregunta("En que código está basado java");
         obj.setCorrecta("C++");
@@ -243,6 +242,7 @@ public class Facil extends javax.swing.JFrame {
 
         jLabel1.setText("jLabel1");
 
+        jBRespuestaC.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jBRespuestaC.setText("jButton1");
         jBRespuestaC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -250,6 +250,7 @@ public class Facil extends javax.swing.JFrame {
             }
         });
 
+        jBRespuestaA.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jBRespuestaA.setText("jButton1");
         jBRespuestaA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -257,6 +258,7 @@ public class Facil extends javax.swing.JFrame {
             }
         });
 
+        jBRespuestaB.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jBRespuestaB.setText("jButton1");
         jBRespuestaB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -264,6 +266,7 @@ public class Facil extends javax.swing.JFrame {
             }
         });
 
+        jBRespuestaD.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jBRespuestaD.setText("jButton1");
         jBRespuestaD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -287,9 +290,9 @@ public class Facil extends javax.swing.JFrame {
                         .addComponent(jBRespuestaB, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(628, 628, 628))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(kGradientPanel1Layout.createSequentialGroup()
                     .addGap(41, 41, 41)
@@ -299,9 +302,9 @@ public class Facil extends javax.swing.JFrame {
         kGradientPanel1Layout.setVerticalGroup(
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                .addGap(42, 42, 42)
+                .addGap(50, 50, 50)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 308, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 300, Short.MAX_VALUE)
                 .addComponent(jBRespuestaB, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
