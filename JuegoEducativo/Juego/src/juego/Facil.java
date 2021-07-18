@@ -20,6 +20,7 @@ public class Facil extends javax.swing.JFrame {
     /**
      * Creates new form Facil
      */
+    int puntos = 0; 
     Fuentes tipoFuentes;
     ArrayList<Easy> lista = new ArrayList();
     public Facil() {       
@@ -34,6 +35,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("PHP");
         obj.setD("JavaScrip");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("¿Cuál es el significado de POO en el tema de programación?");
         obj.setCorrecta("Programación Orientada a Objetos");
         obj.setA("Paradigma Organizado en Objetos");
@@ -41,6 +44,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("Programación Obtenida de Objetos");
         obj.setD("Pantallas Organizadas en Objetos");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("¿Cuando una clase adquiere la propiedad de otra clase, se conoce cómo?");
         obj.setCorrecta("Herencia");
         obj.setA("Constante");
@@ -48,6 +53,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("Herencia");
         obj.setD("Interfaz grafica");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("Si un vector es declarado para almacenar 10 valores qué numeración tienen las casillas del vector");
         obj.setCorrecta("0..9");
         obj.setA("0..9");
@@ -55,6 +62,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("1..9");
         obj.setD("Ninguna es correcta");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("¿Que se escribe para ver el contenido de la casilla 5 de un vector?");
         obj.setCorrecta("Vector[4]");
         obj.setA("Vector[5]");
@@ -62,6 +71,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("Vector[1..5]");
         obj.setD("Ninguna es correcta");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("¿En que año se creó java?");
         obj.setCorrecta("1995");
         obj.setA("1992");
@@ -69,6 +80,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("1997");
         obj.setD("1995");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("¿Cuál de estos son operadores de java?");
         obj.setCorrecta("*=/");
         obj.setA("/** * /");
@@ -76,6 +89,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("*=/");
         obj.setD("().;");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("¿Cómo se llama la clase que termina una cadena de herencia?");
         obj.setCorrecta("Final");
         obj.setA("Final");
@@ -83,6 +98,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("Abstract");
         obj.setD("Extends");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("¿Cuáles son las variables de objeto en java?");
         obj.setCorrecta("Encapsulamiento y herencia");
         obj.setA("Encapsulamiento y herencia");
@@ -90,6 +107,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("Agrupación de datos y de funciones");
         obj.setD("Implements Public Extends");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("¿Cómo deben estar las clases public para acceder a ellas desde otras clases?");
         obj.setCorrecta("Importadas");
         obj.setA("Directas");
@@ -97,6 +116,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("Por herencia");
         obj.setD("Declaradas");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("¿Que objeto utilizaremos para receptar un dato dentro de un formulario?");
         obj.setCorrecta("Textbox");
         obj.setA("Button");
@@ -104,6 +125,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("Label");
         obj.setD("Textbox");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("¿En que lenguaje está basado c#?");
         obj.setCorrecta("C/C++");
         obj.setA("Java");
@@ -111,6 +134,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("PHP");
         obj.setD("Python");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("¿En qué año se creó C#?");
         obj.setCorrecta("2000");
         obj.setA("2000");
@@ -118,6 +143,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("1997");
         obj.setD("1995");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("¿Quién fue el creador de C#?");
         obj.setCorrecta("Andrés Hejlsberg");
         obj.setA("Harrison Smitherd");
@@ -125,6 +152,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("Arthuras Johnson");
         obj.setD("Conan Hejlsberg");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("¿Quién fue el creador de java?");
         obj.setCorrecta("James Gosling");
         obj.setA("James Gosling");
@@ -132,6 +161,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("Gilad Bracha");
         obj.setD("Larry Wall");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("¿Qué estructura repetitiva se utiliza cuando se sabe el número de veces que se\n" +
     "repetirá un proceso?");
         obj.setCorrecta("For");
@@ -140,6 +171,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("If");
         obj.setD("For");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("¿La aplicación Windows forms me permite?");
         obj.setCorrecta("Crear un formulario en blanco para agregar objetos");
         obj.setA("Crear un formulario en blanco para agregar objetos");
@@ -147,6 +180,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("Crear una forma con varios objetos");
         obj.setD("Ninguna de las anteriores");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("¿Si ponemos a una variable un nombre reservado, que cáracter debemos poner para\n" +
         "que no lo sea?");
         obj.setCorrecta("@");
@@ -155,6 +190,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("@");
         obj.setD("#");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("La variable instancia");
         obj.setCorrecta("Representa un atributo de un objeto");
         obj.setA("Es el objeto de la clase");
@@ -162,6 +199,8 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("Es el método de una clase");
         obj.setD("Ninguna de las anteriores");
         lista.add(obj);
+        obj = null;
+        obj = new Easy();
         obj.setPregunta("¿ Cuál es el símbolo del operador AND?");
         obj.setCorrecta("&&");
         obj.setA("AND");
@@ -169,21 +208,27 @@ public class Facil extends javax.swing.JFrame {
         obj.setC("!");
         obj.setD("&&");
         lista.add(obj);
-        jLabel1.setText(lista.get(0).getPregunta());
-        jBRespuestaA.setText(lista.get(0).getA());
-        jBRespuestaB.setText(lista.get(0).getB());
-        jBRespuestaC.setText(lista.get(0).getC());
-        jBRespuestaD.setText(lista.get(0).getD());
+        obj = null;
+        obj = new Easy();
+        String correcta; 
+        for (int i = 0; i < lista.size(); i++) {            
+        int index = (int)(Math.random()*lista.size());
+        correcta = lista.get(index).getCorrecta();
+        jLabel1.setText(lista.get(index).getPregunta());
+        jBRespuestaA.setText(lista.get(index).getA());
+        jBRespuestaB.setText(lista.get(index).getB());
+        jBRespuestaC.setText(lista.get(index).getC());
+        jBRespuestaD.setText(lista.get(index).getD());
+        comparar(index);
+        }   
     }
-    void comparar(String param){
-        String correcta = lista.get(0).getCorrecta();
-        if (correcta == param) {
-            JOptionPane.showMessageDialog(null, "Correcto");
-            jLabel1.setText(lista.get(2).getPregunta());
-            jBRespuestaA.setText(lista.get(2).getA());
-            jBRespuestaB.setText(lista.get(2).getB());
-            jBRespuestaC.setText(lista.get(2).getC());
-            jBRespuestaD.setText(lista.get(2).getD());
+    void comparar(int param){
+        String correcta = lista.get(param).getCorrecta();
+        if (indice == null) {
+            
+        }
+        if (correcta == indice) {
+           JOptionPane.showMessageDialog(null, "Correcto");
         }
         else{
             JOptionPane.showMessageDialog(null, "Incorrecto");
@@ -192,6 +237,18 @@ public class Facil extends javax.swing.JFrame {
             this.setVisible(false);
         }
     }
+    /*void comparar(String param){
+        String correcta = lista.get().getCorrecta();
+        if (correcta == param) {
+            JOptionPane.showMessageDialog(null, "Correcto");
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Incorrecto");
+            Final p = new Final();
+            p.setVisible(true);
+            this.setVisible(false);
+        }
+    }*/
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -254,7 +311,7 @@ public class Facil extends javax.swing.JFrame {
                     .addGroup(kGradientPanel1Layout.createSequentialGroup()
                         .addGap(40, 40, 40)
                         .addComponent(jBRespuestaC, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 203, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 213, Short.MAX_VALUE)
                         .addComponent(jBRespuestaD, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -268,14 +325,14 @@ public class Facil extends javax.swing.JFrame {
                 .addGroup(kGradientPanel1Layout.createSequentialGroup()
                     .addGap(41, 41, 41)
                     .addComponent(jBRespuestaA, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(738, Short.MAX_VALUE)))
+                    .addContainerGap(748, Short.MAX_VALUE)))
         );
         kGradientPanel1Layout.setVerticalGroup(
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel1Layout.createSequentialGroup()
                 .addGap(42, 42, 42)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 281, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 308, Short.MAX_VALUE)
                 .addComponent(jBRespuestaB, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -284,7 +341,7 @@ public class Facil extends javax.swing.JFrame {
                 .addGap(48, 48, 48))
             .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
-                    .addContainerGap(338, Short.MAX_VALUE)
+                    .addContainerGap(365, Short.MAX_VALUE)
                     .addComponent(jBRespuestaA, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(131, 131, 131)))
         );
@@ -293,25 +350,25 @@ public class Facil extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    String indice = null;
     private void jBRespuestaAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaAActionPerformed
         String selected = jBRespuestaA.getText();
-        comparar(selected);
+        indice = selected;
     }//GEN-LAST:event_jBRespuestaAActionPerformed
 
     private void jBRespuestaBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaBActionPerformed
-        String selected = jBRespuestaB.getText();
-        comparar(selected);
+        String selected = jBRespuestaB.getText(); 
+        indice = selected;
     }//GEN-LAST:event_jBRespuestaBActionPerformed
 
     private void jBRespuestaCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaCActionPerformed
         String selected = jBRespuestaC.getText();
-        comparar(selected);
+        indice = selected;
     }//GEN-LAST:event_jBRespuestaCActionPerformed
 
     private void jBRespuestaDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaDActionPerformed
-        String selected = jBRespuestaD.getText();
-        comparar(selected);
+        String selected = jBRespuestaD.getText();   
+        indice = selected;
     }//GEN-LAST:event_jBRespuestaDActionPerformed
 
     /**
