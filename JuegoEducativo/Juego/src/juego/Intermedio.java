@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Armando
+ * @author Jennifer
  */
 public class Intermedio extends javax.swing.JFrame {
     int index;
@@ -36,7 +36,9 @@ public class Intermedio extends javax.swing.JFrame {
         lista.add(obj);
         obj = null;
         obj = new Intermediate();
-        obj.setPregunta("“Es la capacidad que tienen los objetos de una clase en ofrecer respuesta  distinta  e independiente  en  función  de  los  parámetros  (diferentes  implementaciones)  utilizados durante su invocación.”. El concepto anterior pertenece a:");
+        obj.setPregunta("“Es la capacidad que tienen los objetos de una clase en ofrecer respuesta  distinta\n" +
+        "e independiente  en  función  de  los  parámetros  (diferentes  implementaciones)\n" +
+        "utilizados durante su invocación.”. El concepto anterior pertenece a:");
         obj.setCorrecta("Polimorfismo");
         obj.setA("Polimorfismo");
         obj.setB("Array");
@@ -45,7 +47,9 @@ public class Intermedio extends javax.swing.JFrame {
         lista.add(obj);
         obj = null;
         obj = new Intermediate();
-        obj.setPregunta("Se utiliza para describir un fichero o un campo de datos con más detalle. En la programación orientada a objetos, estos son una propiedad o característica que se puede asignar a un objeto (elemento)");
+        obj.setPregunta("Se utiliza para describir un fichero o un campo de datos con más detalle.\n" +
+        "En la programación orientada a objetos, estos son una propiedad o característica\n" +
+        "que se puede asignar a un objeto (elemento)");
         obj.setCorrecta("Atributo");
         obj.setA("Variable");
         obj.setB("Parámetro");
@@ -105,115 +109,91 @@ public class Intermedio extends javax.swing.JFrame {
         obj.setB("double[ ] estatura = {1.73, 1.67, 1.56};");
         obj.setC("char[ ] sexo = {'m', 'f'};");
         obj.setD("boolean[ ] = {true,false};");
-        
-        /*Aqui me quede   --- Pregunta 11*/
-        
-        
-        
         lista.add(obj);
         obj = null;
         obj = new Intermediate();
-        obj.setPregunta("¿Cómo deben estar las clases public para acceder a ellas desde otras clases?");
-        obj.setCorrecta("Importadas");
-        obj.setA("Directas");
-        obj.setB("Importadas");
-        obj.setC("Por herencia");
-        obj.setD("Declaradas");
+        obj.setPregunta("Es una relación entre dos clases separadas que se establece a través de sus objetos.");
+        obj.setCorrecta("Asociación");
+        obj.setA("Polimorfismo");
+        obj.setB("Encapsulamiento");
+        obj.setC("Herencia");
+        obj.setD("Asociación");
         lista.add(obj);
         obj = null;
         obj = new Intermediate();
-        obj.setPregunta("¿Que objeto utilizaremos para receptar un dato dentro de un formulario?");
-        obj.setCorrecta("Textbox");
-        obj.setA("Button");
-        obj.setB("Radiobutton");
-        obj.setC("Label");
-        obj.setD("Textbox");
+        obj.setPregunta("¿Para qué se utiliza el operador aritmético MOD?");
+        obj.setCorrecta("Se utiliza para sustraer el residuo de una división");
+        obj.setA("Se utiliza para sustraer el residuo de una división");
+        obj.setB("Se utiliza para tomar la parte entera del cociente de una división");
+        obj.setC("Se utiliza para obtener la potencia de la base elevada al exponente");
+        obj.setD("Se utiliza para obtener el producto entre los operandos");
         lista.add(obj);
         obj = null;
         obj = new Intermediate();
-        obj.setPregunta("¿En que lenguaje está basado c#?");
-        obj.setCorrecta("C/C++");
-        obj.setA("Java");
-        obj.setB("C/C++");
-        obj.setC("PHP");
-        obj.setD("Python");
+        obj.setPregunta("Elige la opción que contiene operadores relacionales.");
+        obj.setCorrecta(">, <, >=, <=, !=, ==");
+        obj.setA("=, +, *, !=");
+        obj.setB("!!, ||, >=, <=");
+        obj.setC(">, <, ++, --");
+        obj.setD(">, <, >=, <=, !=, ==");
         lista.add(obj);
         obj = null;
         obj = new Intermediate();
-        obj.setPregunta("¿En qué año se creó C#?");
-        obj.setCorrecta("2000");
-        obj.setA("2000");
-        obj.setB("2003");
-        obj.setC("1997");
-        obj.setD("1995");
+        obj.setPregunta("¿Qué tipo de operadores solo puede tener de resultados “verdadero” o “falso”?");
+        obj.setCorrecta("Operadores lógicos");
+        obj.setA("Operadores aritméticos");
+        obj.setB("Operadores de asignación");
+        obj.setC("Operadores lógicos");
+        obj.setD("Operadores relacionales");
         lista.add(obj);
         obj = null;
         obj = new Intermediate();
-        obj.setPregunta("¿Quién fue el creador de C#?");
-        obj.setCorrecta("Andrés Hejlsberg");
-        obj.setA("Harrison Smitherd");
-        obj.setB("Andrés Hejlsberg");
-        obj.setC("Arthuras Johnson");
-        obj.setD("Conan Hejlsberg");
+        obj.setPregunta("¿Qué significa este ejemplo “If (test1)&&(test2)” en relación al operador “&&”?");
+        obj.setCorrecta("Solo evalua test2 si test1 es cierto");
+        obj.setA("Solo evalua test2 si test1 es cierto");
+        obj.setB("Cierto si ambos son ciertos");
+        obj.setC("Cierto si alguno de los dos es cierto");
+        obj.setD("Ninguna respuesta es correcta");
         lista.add(obj);
         obj = null;
         obj = new Intermediate();
-        obj.setPregunta("¿Quién fue el creador de java?");
-        obj.setCorrecta("James Gosling");
-        obj.setA("James Gosling");
-        obj.setB("Bill Joy");
-        obj.setC("Gilad Bracha");
-        obj.setD("Larry Wall");
+        obj.setPregunta("Es la descripción de un conjunto de objetos similares; consta de métodos y de datos\n" +
+        "que resumen las características comunes de dicho conjunto, estamos hablando de:");
+        obj.setCorrecta("Clase");
+        obj.setA("Ciclo Do While");
+        obj.setB("Objeto");
+        obj.setC("Clase");
+        obj.setD("Archivo");
         lista.add(obj);
         obj = null;
         obj = new Intermediate();
-        obj.setPregunta("¿Qué estructura repetitiva se utiliza cuando se sabe el número de veces que se\n" +
-        "repetirá un proceso?");
-        obj.setCorrecta("For");
-        obj.setA("Switch");
-        obj.setB("While");
-        obj.setC("If");
-        obj.setD("For");
+        obj.setPregunta("¿Cuál de estas opciones no es un paradigma de programación?");
+        obj.setCorrecta("Programación Cuadrada");
+        obj.setA("Programación Orientada a Objetos");
+        obj.setB("Programación Secuencial");
+        obj.setC("Programación Cuadrada");
+        obj.setD("Programación Imperativa");
         lista.add(obj);
         obj = null;
         obj = new Intermediate();
-        obj.setPregunta("¿La aplicación Windows forms me permite?");
-        obj.setCorrecta("Crear un formulario en blanco para agregar objetos");
-        obj.setA("Crear un formulario en blanco para agregar objetos");
-        obj.setB("Crear un contenedor de objetos");
-        obj.setC("Crear una forma con varios objetos");
-        obj.setD("Ninguna de las anteriores");
+        obj.setPregunta("¿Dónde y cuándo surgió el paradigma de Programación Orientada a objetos (POO)?");
+        obj.setCorrecta("Noruega en 1967");
+        obj.setA("Alemania en 1965");
+        obj.setB("Estados Unidos en 1982");
+        obj.setC("Japón en 1979");
+        obj.setD("Noruega en 1967");
         lista.add(obj);
         obj = null;
         obj = new Intermediate();
-        obj.setPregunta("¿Si ponemos a una variable un nombre reservado, que cáracter debemos poner para\n" +
-        "que no lo sea?");
-        obj.setCorrecta("@");
-        obj.setA("/");
-        obj.setB("2003");
-        obj.setC("@");
-        obj.setD("#");
+        obj.setPregunta("¿En caso de que no se le de valor a un tipo bolean el valor por defecto es?");
+        obj.setCorrecta("False");
+        obj.setA("True");
+        obj.setB("False");
+        obj.setC("Null");
+        obj.setD("Hay que darle un valor");
         lista.add(obj);
         obj = null;
-        obj = new Intermediate();
-        obj.setPregunta("La variable instancia");
-        obj.setCorrecta("Representa un atributo de un objeto");
-        obj.setA("Es el objeto de la clase");
-        obj.setB("Representa un atributo de un objeto");
-        obj.setC("Es el método de una clase");
-        obj.setD("Ninguna de las anteriores");
-        lista.add(obj);
-        obj = null;
-        obj = new Intermediate();
-        obj.setPregunta("¿ Cuál es el símbolo del operador AND?");
-        obj.setCorrecta("&&");
-        obj.setA("AND");
-        obj.setB("||");
-        obj.setC("!");
-        obj.setD("&&");
-        lista.add(obj);
-        obj = null;
-        obj = new Intermediate();          
+        obj = new Intermediate();         
         index = (int)(Math.random()*lista.size());
         jLabel1.setText(lista.get(index).getPregunta());
         jBRespuestaA.setText(lista.get(index).getA());
@@ -238,6 +218,8 @@ public class Intermedio extends javax.swing.JFrame {
         jBRespuestaA = new javax.swing.JButton();
         jBRespuestaB = new javax.swing.JButton();
         jBRespuestaD = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -248,14 +230,48 @@ public class Intermedio extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
 
         jBRespuestaC.setText("jButton1");
+        jBRespuestaC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBRespuestaCActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("jLabel2");
 
         jBRespuestaA.setText("jButton1");
+        jBRespuestaA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBRespuestaAActionPerformed(evt);
+            }
+        });
 
         jBRespuestaB.setText("jButton1");
+        jBRespuestaB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBRespuestaBActionPerformed(evt);
+            }
+        });
 
         jBRespuestaD.setText("jButton1");
+        jBRespuestaD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBRespuestaDActionPerformed(evt);
+            }
+        });
+
+        jButton1.setText("50/50");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setText("Llamada");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout kGradientPanel1Layout = new javax.swing.GroupLayout(kGradientPanel1);
         kGradientPanel1.setLayout(kGradientPanel1Layout);
@@ -277,7 +293,11 @@ public class Intermedio extends javax.swing.JFrame {
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel2)
                     .addComponent(jLabel1))
-                .addGap(628, 628, 628))
+                .addGap(291, 291, 291)
+                .addComponent(jButton2)
+                .addGap(87, 87, 87)
+                .addComponent(jButton1)
+                .addGap(64, 64, 64))
             .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(kGradientPanel1Layout.createSequentialGroup()
                     .addGap(41, 41, 41)
@@ -287,8 +307,15 @@ public class Intermedio extends javax.swing.JFrame {
         kGradientPanel1Layout.setVerticalGroup(
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                .addGap(42, 42, 42)
-                .addComponent(jLabel1)
+                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kGradientPanel1Layout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addComponent(jLabel1))
+                    .addGroup(kGradientPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton1)
+                            .addComponent(jButton2))))
                 .addGap(85, 85, 85)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 180, Short.MAX_VALUE)
@@ -328,6 +355,166 @@ public class Intermedio extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBRespuestaAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaAActionPerformed
+        String selected = jBRespuestaA.getText();
+        String correcta = lista.get(index).getCorrecta();
+        if (selected == correcta) {
+            JOptionPane.showMessageDialog(null, "Correcto");           
+                index = (int)(Math.random()*lista.size());
+                jLabel1.setText(lista.get(index).getPregunta());
+                jBRespuestaA.setText(lista.get(index).getA());
+                jBRespuestaB.setText(lista.get(index).getB());
+                jBRespuestaC.setText(lista.get(index).getC());
+                jBRespuestaD.setText(lista.get(index).getD());
+                puntos++;
+                jBRespuestaA.setEnabled(true);
+                jBRespuestaB.setEnabled(true);
+                jBRespuestaC.setEnabled(true);
+                jBRespuestaD.setEnabled(true);
+                if (puntos >= 3) {
+                    JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Intermedias");
+                    Dificil p1 = new Dificil();
+                    p1.setVisible(true);
+                    this.setVisible(false);
+                } 
+        }
+        else{
+        JOptionPane.showMessageDialog(null, "Incorrecto");
+            Final p = new Final();
+            p.setVisible(true);
+            this.setVisible(false);
+        }
+    }//GEN-LAST:event_jBRespuestaAActionPerformed
+
+    private void jBRespuestaBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaBActionPerformed
+        String selected = jBRespuestaB.getText();
+        String correcta = lista.get(index).getCorrecta();
+        if (selected == correcta) {
+            JOptionPane.showMessageDialog(null, "Correcto");           
+                index = (int)(Math.random()*lista.size());
+                jLabel1.setText(lista.get(index).getPregunta());
+                jBRespuestaA.setText(lista.get(index).getA());
+                jBRespuestaB.setText(lista.get(index).getB());
+                jBRespuestaC.setText(lista.get(index).getC());
+                jBRespuestaD.setText(lista.get(index).getD());
+                puntos++;
+                jBRespuestaA.setEnabled(true);
+                jBRespuestaB.setEnabled(true);
+                jBRespuestaC.setEnabled(true);
+                jBRespuestaD.setEnabled(true);
+                if (puntos >= 3) {
+                    JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Intermedias");
+                    Dificil p1 = new Dificil();
+                    p1.setVisible(true);
+                    this.setVisible(false);
+                } 
+        }
+        else{
+        JOptionPane.showMessageDialog(null, "Incorrecto");
+            Final p = new Final();
+            p.setVisible(true);
+            this.setVisible(false);
+        }
+    }//GEN-LAST:event_jBRespuestaBActionPerformed
+
+    private void jBRespuestaCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaCActionPerformed
+        String selected = jBRespuestaC.getText();
+        String correcta = lista.get(index).getCorrecta();
+        if (selected == correcta) {
+            JOptionPane.showMessageDialog(null, "Correcto");           
+                index = (int)(Math.random()*lista.size());
+                jLabel1.setText(lista.get(index).getPregunta());
+                jBRespuestaA.setText(lista.get(index).getA());
+                jBRespuestaB.setText(lista.get(index).getB());
+                jBRespuestaC.setText(lista.get(index).getC());
+                jBRespuestaD.setText(lista.get(index).getD());
+                puntos++;
+                jBRespuestaA.setEnabled(true);
+                jBRespuestaB.setEnabled(true);
+                jBRespuestaC.setEnabled(true);
+                jBRespuestaD.setEnabled(true);
+                if (puntos >= 3) {
+                    JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Intermedias");
+                    Dificil p1 = new Dificil();
+                    p1.setVisible(true);
+                    this.setVisible(false);
+                } 
+        }
+        else{
+        JOptionPane.showMessageDialog(null, "Incorrecto");
+            Final p = new Final();
+            p.setVisible(true);
+            this.setVisible(false);
+        }
+    }//GEN-LAST:event_jBRespuestaCActionPerformed
+
+    private void jBRespuestaDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaDActionPerformed
+        String selected = jBRespuestaD.getText();
+        String correcta = lista.get(index).getCorrecta();
+        if (selected == correcta) {
+            JOptionPane.showMessageDialog(null, "Correcto");           
+                index = (int)(Math.random()*lista.size());
+                jLabel1.setText(lista.get(index).getPregunta());
+                jBRespuestaA.setText(lista.get(index).getA());
+                jBRespuestaB.setText(lista.get(index).getB());
+                jBRespuestaC.setText(lista.get(index).getC());
+                jBRespuestaD.setText(lista.get(index).getD());
+                puntos++;
+                jBRespuestaA.setEnabled(true);
+                jBRespuestaB.setEnabled(true);
+                jBRespuestaC.setEnabled(true);
+                jBRespuestaD.setEnabled(true);
+                if (puntos >= 3) {
+                    JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Intermedias");
+                    Dificil p1 = new Dificil();
+                    p1.setVisible(true);
+                    this.setVisible(false);
+                } 
+        }
+        else{
+        JOptionPane.showMessageDialog(null, "Incorrecto");
+            Final p = new Final();
+            p.setVisible(true);
+            this.setVisible(false);
+        }
+    }//GEN-LAST:event_jBRespuestaDActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        String correcta = lista.get(index).getCorrecta();
+        Llamada p1 = new Llamada(correcta);
+        p1.setVisible(true);
+        jButton2.setEnabled(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        String correcta = lista.get(index).getCorrecta();
+        if (jBRespuestaA.getText() != correcta &&jBRespuestaB.getText() != correcta) {
+            jBRespuestaA.setEnabled(false);
+            jBRespuestaB.setEnabled(false);
+        }
+        else if (jBRespuestaA.getText() != correcta &&jBRespuestaC.getText() != correcta) {
+            jBRespuestaA.setEnabled(false);
+            jBRespuestaC.setEnabled(false);
+        }
+        else if (jBRespuestaA.getText() != correcta &&jBRespuestaD.getText() != correcta) {
+            jBRespuestaA.setEnabled(false);
+            jBRespuestaD.setEnabled(false);
+        }
+        else if (jBRespuestaB.getText() != correcta &&jBRespuestaC.getText() != correcta) {
+            jBRespuestaB.setEnabled(false);
+            jBRespuestaC.setEnabled(false);
+        }
+        else if (jBRespuestaB.getText() != correcta &&jBRespuestaD.getText() != correcta) {
+            jBRespuestaB.setEnabled(false);
+            jBRespuestaD.setEnabled(false);
+        }
+        else if (jBRespuestaC.getText() != correcta &&jBRespuestaD.getText() != correcta) {
+            jBRespuestaC.setEnabled(false);
+            jBRespuestaD.setEnabled(false);
+        }
+        jButton1.setEnabled(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -369,6 +556,8 @@ public class Intermedio extends javax.swing.JFrame {
     private javax.swing.JButton jBRespuestaB;
     private javax.swing.JButton jBRespuestaC;
     private javax.swing.JButton jBRespuestaD;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private keeptoo.KGradientPanel kGradientPanel1;
