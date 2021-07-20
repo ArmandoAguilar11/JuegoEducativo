@@ -232,6 +232,8 @@ public class Facil extends javax.swing.JFrame {
         jBRespuestaA = new javax.swing.JButton();
         jBRespuestaB = new javax.swing.JButton();
         jBRespuestaD = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setExtendedState(6);
@@ -274,6 +276,20 @@ public class Facil extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setText("50/50");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setText("Llamada");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout kGradientPanel1Layout = new javax.swing.GroupLayout(kGradientPanel1);
         kGradientPanel1.setLayout(kGradientPanel1Layout);
         kGradientPanel1Layout.setHorizontalGroup(
@@ -293,6 +309,12 @@ public class Facil extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton2)
+                .addGap(86, 86, 86)
+                .addComponent(jButton1)
+                .addGap(98, 98, 98))
             .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(kGradientPanel1Layout.createSequentialGroup()
                     .addGap(41, 41, 41)
@@ -302,9 +324,13 @@ public class Facil extends javax.swing.JFrame {
         kGradientPanel1Layout.setVerticalGroup(
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                .addGap(50, 50, 50)
+                .addGap(25, 25, 25)
+                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
+                .addGap(29, 29, 29)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 300, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 264, Short.MAX_VALUE)
                 .addComponent(jBRespuestaB, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -335,6 +361,10 @@ public class Facil extends javax.swing.JFrame {
                 jBRespuestaC.setText(lista.get(index).getC());
                 jBRespuestaD.setText(lista.get(index).getD());
                 puntos++;
+                jBRespuestaA.setEnabled(true);
+                jBRespuestaB.setEnabled(true);
+                jBRespuestaC.setEnabled(true);
+                jBRespuestaD.setEnabled(true);
                 if (puntos >= 3) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Faciles");
                     Intermedio p1 = new Intermedio();
@@ -362,6 +392,10 @@ public class Facil extends javax.swing.JFrame {
                 jBRespuestaC.setText(lista.get(index).getC());
                 jBRespuestaD.setText(lista.get(index).getD());
                 puntos++;
+                jBRespuestaA.setEnabled(true);
+                jBRespuestaB.setEnabled(true);
+                jBRespuestaC.setEnabled(true);
+                jBRespuestaD.setEnabled(true);
                 if (puntos >= 3) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Faciles");
                     Intermedio p1 = new Intermedio();
@@ -389,6 +423,10 @@ public class Facil extends javax.swing.JFrame {
                 jBRespuestaC.setText(lista.get(index).getC());
                 jBRespuestaD.setText(lista.get(index).getD());
                 puntos++;
+                jBRespuestaA.setEnabled(true);
+                jBRespuestaB.setEnabled(true);
+                jBRespuestaC.setEnabled(true);
+                jBRespuestaD.setEnabled(true);
                 if (puntos >= 3) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Faciles");
                     Intermedio p1 = new Intermedio();
@@ -416,6 +454,10 @@ public class Facil extends javax.swing.JFrame {
                 jBRespuestaC.setText(lista.get(index).getC());
                 jBRespuestaD.setText(lista.get(index).getD());
                 puntos++;
+                jBRespuestaA.setEnabled(true);
+                jBRespuestaB.setEnabled(true);
+                jBRespuestaC.setEnabled(true);
+                jBRespuestaD.setEnabled(true);
                 if (puntos >= 3) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Faciles");
                     Intermedio p1 = new Intermedio();
@@ -430,6 +472,42 @@ public class Facil extends javax.swing.JFrame {
             this.setVisible(false);
         }
     }//GEN-LAST:event_jBRespuestaDActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        String correcta = lista.get(index).getCorrecta();
+        Llamada p1 = new Llamada(correcta);
+        p1.setVisible(true);
+        jButton2.setEnabled(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        String correcta = lista.get(index).getCorrecta();
+        if (jBRespuestaA.getText() != correcta &&jBRespuestaB.getText() != correcta) {
+            jBRespuestaA.setEnabled(false);
+            jBRespuestaB.setEnabled(false);
+        }
+        else if (jBRespuestaA.getText() != correcta &&jBRespuestaC.getText() != correcta) {
+            jBRespuestaA.setEnabled(false);
+            jBRespuestaC.setEnabled(false);
+        }
+        else if (jBRespuestaA.getText() != correcta &&jBRespuestaD.getText() != correcta) {
+            jBRespuestaA.setEnabled(false);
+            jBRespuestaD.setEnabled(false);
+        }
+        else if (jBRespuestaB.getText() != correcta &&jBRespuestaC.getText() != correcta) {
+            jBRespuestaB.setEnabled(false);
+            jBRespuestaC.setEnabled(false);
+        }
+        else if (jBRespuestaB.getText() != correcta &&jBRespuestaD.getText() != correcta) {
+            jBRespuestaB.setEnabled(false);
+            jBRespuestaD.setEnabled(false);
+        }
+        else if (jBRespuestaC.getText() != correcta &&jBRespuestaD.getText() != correcta) {
+            jBRespuestaC.setEnabled(false);
+            jBRespuestaD.setEnabled(false);
+        }
+        jButton1.setEnabled(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -471,6 +549,8 @@ public class Facil extends javax.swing.JFrame {
     private javax.swing.JButton jBRespuestaB;
     private javax.swing.JButton jBRespuestaC;
     private javax.swing.JButton jBRespuestaD;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private keeptoo.KGradientPanel kGradientPanel1;
     // End of variables declaration//GEN-END:variables
