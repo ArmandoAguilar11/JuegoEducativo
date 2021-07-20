@@ -16,6 +16,7 @@ public class Llamada extends javax.swing.JFrame {
      */
     public Llamada(String param) {
         initComponents();
+        this.setLocationRelativeTo(null);
         jTextField1.setText(param);
         jTextField1.setEnabled(false);
     }
