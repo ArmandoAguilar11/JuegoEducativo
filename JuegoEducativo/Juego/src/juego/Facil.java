@@ -163,7 +163,7 @@ public class Facil extends javax.swing.JFrame {
         obj = null;
         obj = new Easy();
         obj.setPregunta("¿Qué estructura repetitiva se utiliza cuando se sabe el número de veces que se\n" +
-    "repetirá un proceso?");
+        "repetirá un proceso?");
         obj.setCorrecta("For");
         obj.setA("Switch");
         obj.setB("While");

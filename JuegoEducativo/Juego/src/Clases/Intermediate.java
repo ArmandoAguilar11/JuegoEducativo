@@ -11,7 +11,7 @@ import juego.*;
  *
  * @author USUARIO
  */
-public class Easy {
+public class Intermediate {
     private String pregunta;
     private String correcta;
     private String A;
@@ -19,7 +19,7 @@ public class Easy {
     private String C;
     private String D;
     
-    public Easy(){
+    public Intermediate(){
         pregunta = "";
         correcta = "";
         A = "";
@@ -75,5 +75,4 @@ public class Easy {
     public void setD(String D) {
         this.D = D;
     }
-    
 }
