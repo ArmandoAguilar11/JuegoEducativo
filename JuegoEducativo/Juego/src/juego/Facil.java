@@ -19,6 +19,8 @@ public class Facil extends javax.swing.JFrame {
     /**
      * Creates new form Facil
      */
+    //ArrayList<Integer> x;
+    int i1, i2, i3;
     int puntos = 0;
     Fuentes tipoFuentes;
     ArrayList<Easy> lista = new ArrayList();
@@ -210,6 +212,7 @@ public class Facil extends javax.swing.JFrame {
         obj = null;
         obj = new Easy();          
         index = (int)(Math.random()*lista.size());
+        i1 = index;
         jLabel1.setText(lista.get(index).getPregunta());
         jBRespuestaA.setText(lista.get(index).getA());
         jBRespuestaB.setText(lista.get(index).getB());
@@ -352,9 +355,27 @@ public class Facil extends javax.swing.JFrame {
     private void jBRespuestaAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaAActionPerformed
         String selected = jBRespuestaA.getText();
         String correcta = lista.get(index).getCorrecta();
-        if (selected == correcta) {
+        if (selected.equals(correcta)) {
             JOptionPane.showMessageDialog(null, "Correcto");           
                 index = (int)(Math.random()*lista.size());
+                if (puntos == 0) {
+                i2 = index;
+                if (i1 == i2) {
+                while(i1 == i2){
+                    index = (int)(Math.random()*lista.size());
+                    i2 = index;
+                    }
+                  }
+                }
+                if (puntos == 1) {
+                    i3 = index;
+                    if (i2 == i3) {
+                        while(i2 == i3){
+                        index = (int)(Math.random()*lista.size());
+                        i3 = index;
+                        }
+                    }
+                }
                 jLabel1.setText(lista.get(index).getPregunta());
                 jBRespuestaA.setText(lista.get(index).getA());
                 jBRespuestaB.setText(lista.get(index).getB());
@@ -383,9 +404,27 @@ public class Facil extends javax.swing.JFrame {
     private void jBRespuestaBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaBActionPerformed
         String selected = jBRespuestaB.getText(); 
         String correcta = lista.get(index).getCorrecta();
-        if (selected == correcta) {
+        if (selected.equals(correcta)) {
             JOptionPane.showMessageDialog(null, "Correcto");          
                 index = (int)(Math.random()*lista.size());
+                if (puntos == 0) {
+                i2 = index;
+                if (i1 == i2) {
+                while(i1 == i2){
+                    index = (int)(Math.random()*lista.size());
+                    i2 = index;
+                    }
+                  }
+                }
+                if (puntos == 1) {
+                    i3 = index;
+                    if (i2 == i3) {
+                        while(i2 == i3){
+                        index = (int)(Math.random()*lista.size());
+                        i3 = index;
+                        }
+                    }
+                }
                 jLabel1.setText(lista.get(index).getPregunta());
                 jBRespuestaA.setText(lista.get(index).getA());
                 jBRespuestaB.setText(lista.get(index).getB());
@@ -414,9 +453,27 @@ public class Facil extends javax.swing.JFrame {
     private void jBRespuestaCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaCActionPerformed
         String selected = jBRespuestaC.getText();
         String correcta = lista.get(index).getCorrecta();
-        if (selected == correcta) {
+        if (selected.equals(correcta)) {
             JOptionPane.showMessageDialog(null, "Correcto");           
                 index = (int)(Math.random()*lista.size());
+                if (puntos == 0) {
+                i2 = index;
+                if (i1 == i2) {
+                while(i1 == i2){
+                    index = (int)(Math.random()*lista.size());
+                    i2 = index;
+                    }
+                  }
+                }
+                if (puntos == 1) {
+                    i3 = index;
+                    if (i2 == i3) {
+                        while(i2 == i3){
+                        index = (int)(Math.random()*lista.size());
+                        i3 = index;
+                        }
+                    }
+                }
                 jLabel1.setText(lista.get(index).getPregunta());
                 jBRespuestaA.setText(lista.get(index).getA());
                 jBRespuestaB.setText(lista.get(index).getB());
@@ -445,9 +502,27 @@ public class Facil extends javax.swing.JFrame {
     private void jBRespuestaDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaDActionPerformed
         String selected = jBRespuestaD.getText();   
         String correcta = lista.get(index).getCorrecta();
-        if (selected == correcta) {
+        if (selected.equals(correcta)) {
             JOptionPane.showMessageDialog(null, "Correcto");            
                 index = (int)(Math.random()*lista.size());
+                if (puntos == 0) {
+                i2 = index;
+                if (i1 == i2) {
+                while(i1 == i2){
+                    index = (int)(Math.random()*lista.size());
+                    i2 = index;
+                    }
+                  }
+                }
+                if (puntos == 1) {
+                    i3 = index;
+                    if (i2 == i3) {
+                        while(i2 == i3){
+                        index = (int)(Math.random()*lista.size());
+                        i3 = index;
+                        }
+                    }
+                }
                 jLabel1.setText(lista.get(index).getPregunta());
                 jBRespuestaA.setText(lista.get(index).getA());
                 jBRespuestaB.setText(lista.get(index).getB());
@@ -482,27 +557,27 @@ public class Facil extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String correcta = lista.get(index).getCorrecta();
-        if (jBRespuestaA.getText() != correcta &&jBRespuestaB.getText() != correcta) {
+        if (!jBRespuestaA.getText().equals(correcta) &&!jBRespuestaB.getText().equals(correcta)) {
             jBRespuestaA.setEnabled(false);
             jBRespuestaB.setEnabled(false);
         }
-        else if (jBRespuestaA.getText() != correcta &&jBRespuestaC.getText() != correcta) {
+        else if (!jBRespuestaA.getText().equals(correcta) &&!jBRespuestaC.getText().equals(correcta)) {
             jBRespuestaA.setEnabled(false);
             jBRespuestaC.setEnabled(false);
         }
-        else if (jBRespuestaA.getText() != correcta &&jBRespuestaD.getText() != correcta) {
+        else if (!jBRespuestaA.getText().equals(correcta) &&!jBRespuestaD.getText().equals(correcta)) {
             jBRespuestaA.setEnabled(false);
             jBRespuestaD.setEnabled(false);
         }
-        else if (jBRespuestaB.getText() != correcta &&jBRespuestaC.getText() != correcta) {
+        else if (!jBRespuestaB.getText().equals(correcta) &&!jBRespuestaC.getText().equals(correcta)) {
             jBRespuestaB.setEnabled(false);
             jBRespuestaC.setEnabled(false);
         }
-        else if (jBRespuestaB.getText() != correcta &&jBRespuestaD.getText() != correcta) {
+        else if (!jBRespuestaB.getText().equals(correcta) &&!jBRespuestaD.getText().equals(correcta)) {
             jBRespuestaB.setEnabled(false);
             jBRespuestaD.setEnabled(false);
         }
-        else if (jBRespuestaC.getText() != correcta &&jBRespuestaD.getText() != correcta) {
+        else if (!jBRespuestaC.getText().equals(correcta) &&!jBRespuestaD.getText().equals(correcta)) {
             jBRespuestaC.setEnabled(false);
             jBRespuestaD.setEnabled(false);
         }
