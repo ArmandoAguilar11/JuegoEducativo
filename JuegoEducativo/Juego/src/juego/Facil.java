@@ -369,8 +369,8 @@ public class Facil extends javax.swing.JFrame {
                 }
                 if (puntos == 1) {
                     i3 = index;
-                    if (i2 == i3) {
-                        while(i2 == i3){
+                    if (i2 == i3 || i1 == i3) {
+                        while(i2 == i3 || i1 == i3){
                         index = (int)(Math.random()*lista.size());
                         i3 = index;
                         }
@@ -418,8 +418,8 @@ public class Facil extends javax.swing.JFrame {
                 }
                 if (puntos == 1) {
                     i3 = index;
-                    if (i2 == i3) {
-                        while(i2 == i3){
+                    if (i2 == i3 || i1 == i3) {
+                        while(i2 == i3 || i1 == i3){
                         index = (int)(Math.random()*lista.size());
                         i3 = index;
                         }
@@ -467,8 +467,8 @@ public class Facil extends javax.swing.JFrame {
                 }
                 if (puntos == 1) {
                     i3 = index;
-                    if (i2 == i3) {
-                        while(i2 == i3){
+                    if (i2 == i3 || i1 == i3) {
+                        while(i2 == i3 || i1 == i3){
                         index = (int)(Math.random()*lista.size());
                         i3 = index;
                         }
@@ -516,8 +516,8 @@ public class Facil extends javax.swing.JFrame {
                 }
                 if (puntos == 1) {
                     i3 = index;
-                    if (i2 == i3) {
-                        while(i2 == i3){
+                    if (i2 == i3 || i1 == i3) {
+                        while(i2 == i3 || i1 == i3){
                         index = (int)(Math.random()*lista.size());
                         i3 = index;
                         }
