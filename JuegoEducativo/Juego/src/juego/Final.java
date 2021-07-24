@@ -17,11 +17,20 @@ public class Final extends javax.swing.JFrame {
      * Creates new form Final
      */
     Fuentes tipoFuentes;
-    public Final() {
+
+
+    public Final(String nameparam, int points) {
         initComponents();
+        jTextField2.setText(nameparam);
         tipoFuentes = new Fuentes();
+        int puntos = points*100;
+        jTextField1.setText(Integer.toString(puntos));
         jLabel1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 60));
         jLabel3.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 60));
+    }
+
+    private Final() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /**
@@ -180,7 +189,7 @@ public class Final extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

@@ -16,6 +16,9 @@ import javax.swing.JOptionPane;
  */
 public class Facil extends javax.swing.JFrame {
     int index;
+    boolean comodin1 = true;
+    boolean comodin2 = true;
+    String name;
     /**
      * Creates new form Facil
      */
@@ -24,8 +27,9 @@ public class Facil extends javax.swing.JFrame {
     int puntos = 0;
     Fuentes tipoFuentes;
     ArrayList<Easy> lista = new ArrayList();
-    public Facil() {       
+    public Facil(String nameparam) {       
         initComponents();
+        name = nameparam;
         tipoFuentes = new Fuentes();
         jLabel1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 36));
         Easy obj = new Easy();
@@ -219,6 +223,10 @@ public class Facil extends javax.swing.JFrame {
         jBRespuestaC.setText(lista.get(index).getC());
         jBRespuestaD.setText(lista.get(index).getD()); 
     }
+
+    private Facil() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -388,14 +396,14 @@ public class Facil extends javax.swing.JFrame {
                 jBRespuestaD.setEnabled(true);
                 if (puntos >= 3) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Faciles");
-                    Intermedio p1 = new Intermedio();
+                    Intermedio p1 = new Intermedio(name, puntos, comodin1, comodin2);
                     p1.setVisible(true);
                     this.setVisible(false);
                 } 
         }
         else{
         JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final();
+            Final p = new Final(name, puntos);
             p.setVisible(true);
             this.setVisible(false);
         }
@@ -437,14 +445,14 @@ public class Facil extends javax.swing.JFrame {
                 jBRespuestaD.setEnabled(true);
                 if (puntos >= 3) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Faciles");
-                    Intermedio p1 = new Intermedio();
+                    Intermedio p1 = new Intermedio(name, puntos, comodin1, comodin2);
                     p1.setVisible(true);
                     this.setVisible(false);
                 } 
         }
         else{
         JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final();
+            Final p = new Final(name, puntos);
             p.setVisible(true);
             this.setVisible(false);
         }
@@ -486,14 +494,14 @@ public class Facil extends javax.swing.JFrame {
                 jBRespuestaD.setEnabled(true);
                 if (puntos >= 3) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Faciles");
-                    Intermedio p1 = new Intermedio();
+                    Intermedio p1 = new Intermedio(name, puntos, comodin1, comodin2);
                     p1.setVisible(true);
                     this.setVisible(false);
                 } 
         }
         else{
         JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final();
+            Final p = new Final(name, puntos);
             p.setVisible(true);
             this.setVisible(false);
         }
@@ -535,24 +543,25 @@ public class Facil extends javax.swing.JFrame {
                 jBRespuestaD.setEnabled(true);
                 if (puntos >= 3) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Faciles");
-                    Intermedio p1 = new Intermedio();
+                    Intermedio p1 = new Intermedio(name, puntos, comodin1, comodin2);
                     p1.setVisible(true);
                     this.setVisible(false);
                 } 
         }
         else{
         JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final();
+            Final p = new Final(name, puntos);
             p.setVisible(true);
             this.setVisible(false);
         }
     }//GEN-LAST:event_jBRespuestaDActionPerformed
-
+    
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         String correcta = lista.get(index).getCorrecta();
         Llamada p1 = new Llamada(correcta);
         p1.setVisible(true);
         jButton2.setEnabled(false);
+        comodin1 = false;
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -582,6 +591,7 @@ public class Facil extends javax.swing.JFrame {
             jBRespuestaD.setEnabled(false);
         }
         jButton1.setEnabled(false);
+        comodin2 = false;
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

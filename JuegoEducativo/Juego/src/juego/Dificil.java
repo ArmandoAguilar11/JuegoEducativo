@@ -21,11 +21,14 @@ public class Dificil extends javax.swing.JFrame {
      */
     //ArrayList<Integer> x;
     int i1, i2, i3;
-    int puntos = 0;
+    int puntos;
+    String name;
     Fuentes tipoFuentes;
     ArrayList<Difficult> lista = new ArrayList();
-    public Dificil() {
+    public Dificil(String nameparam, int points) {
         initComponents();
+        name = nameparam;
+        puntos = points;
         tipoFuentes = new Fuentes();
         jLabel1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 24));
         Difficult obj = new Difficult();
@@ -213,6 +216,10 @@ public class Dificil extends javax.swing.JFrame {
         jBRespuestaB.setText(lista.get(index).getB());
         jBRespuestaC.setText(lista.get(index).getC());
         jBRespuestaD.setText(lista.get(index).getD()); 
+    }
+
+    private Dificil() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /**
@@ -406,14 +413,14 @@ public class Dificil extends javax.swing.JFrame {
                 jBRespuestaD.setEnabled(true);
                 if (puntos >= 3) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Difíciles");
-                    Final p1 = new Final();
+                    Final p1 = new Final(name, puntos);
                     p1.setVisible(true);
                     this.setVisible(false);
                 } 
         }
         else{
         JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final();
+            Final p = new Final(name, puntos);
             p.setVisible(true);
             this.setVisible(false);
         }
@@ -456,14 +463,14 @@ public class Dificil extends javax.swing.JFrame {
                 jBRespuestaD.setEnabled(true);
                 if (puntos >= 3) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Difíciles");
-                    Final p1 = new Final();
+                    Final p1 = new Final(name, puntos);
                     p1.setVisible(true);
                     this.setVisible(false);
                 } 
         }
         else{
         JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final();
+            Final p = new Final(name, puntos);
             p.setVisible(true);
             this.setVisible(false);
         }
@@ -506,14 +513,14 @@ public class Dificil extends javax.swing.JFrame {
                 jBRespuestaD.setEnabled(true);
                 if (puntos >= 3) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Difíciles");
-                    Final p1 = new Final();
+                    Final p1 = new Final(name, puntos);
                     p1.setVisible(true);
                     this.setVisible(false);
                 } 
         }
         else{
         JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final();
+            Final p = new Final(name, puntos);
             p.setVisible(true);
             this.setVisible(false);
         }
@@ -556,14 +563,14 @@ public class Dificil extends javax.swing.JFrame {
                 jBRespuestaD.setEnabled(true);
                 if (puntos >= 3) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Difíciles");
-                    Final p1 = new Final();
+                    Final p1 = new Final(name, puntos);
                     p1.setVisible(true);
                     this.setVisible(false);
                 } 
         }
         else{
         JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final();
+            Final p = new Final(name, puntos);
             p.setVisible(true);
             this.setVisible(false);
         }

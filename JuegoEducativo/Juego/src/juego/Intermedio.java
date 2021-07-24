@@ -20,10 +20,30 @@ public class Intermedio extends javax.swing.JFrame {
      * Creates new form Intermedio
      */
     Fuentes tipoFuentes;
-    int puntos = 0;
+    int i1, i2, i3;
+    int puntos;
+    String name;
     ArrayList<Intermediate> lista = new ArrayList();
-    public Intermedio() {
+    public Intermedio(String nameparam, int points, boolean com1, boolean com2) {
         initComponents();
+        name = nameparam;
+        if (com1 == false && com2 == false) {
+            jButton2.setEnabled(false);
+            jButton1.setEnabled(false);
+        }
+        else if (com1 == false && com2 == true) {
+            jButton2.setEnabled(false);
+            jButton1.setEnabled(true);
+        }
+        else if (com1 == true && com2 == false) {
+            jButton2.setEnabled(true);
+            jButton1.setEnabled(false);
+        }
+        else if (com1 == true && com2 == true) {
+            jButton2.setEnabled(true);
+            jButton1.setEnabled(true);
+        }
+        puntos = points;
         tipoFuentes = new Fuentes();
         jLabel1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 24));
         Intermediate obj = new Intermediate();
@@ -195,11 +215,16 @@ public class Intermedio extends javax.swing.JFrame {
         obj = null;
         obj = new Intermediate();         
         index = (int)(Math.random()*lista.size());
+        i1 = index;
         jLabel1.setText(lista.get(index).getPregunta());
         jBRespuestaA.setText(lista.get(index).getA());
         jBRespuestaB.setText(lista.get(index).getB());
         jBRespuestaC.setText(lista.get(index).getC());
         jBRespuestaD.setText(lista.get(index).getD()); 
+    }
+
+    private Intermedio() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /**
@@ -222,6 +247,8 @@ public class Intermedio extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setExtendedState(6);
+        setState(6);
 
         kGradientPanel1.setkEndColor(new java.awt.Color(247, 217, 206));
         kGradientPanel1.setkGradientFocus(60);
@@ -332,26 +359,7 @@ public class Intermedio extends javax.swing.JFrame {
                     .addGap(131, 131, 131)))
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1309, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(kGradientPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 539, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(kGradientPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        getContentPane().add(kGradientPanel1, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -362,6 +370,24 @@ public class Intermedio extends javax.swing.JFrame {
         if (selected == correcta) {
             JOptionPane.showMessageDialog(null, "Correcto");           
                 index = (int)(Math.random()*lista.size());
+                if (puntos == 3) {
+                i2 = index;
+                if (i1 == i2) {
+                while(i1 == i2){
+                    index = (int)(Math.random()*lista.size());
+                    i2 = index;
+                    }
+                  }
+                }
+                if (puntos == 4) {
+                    i3 = index;
+                    if (i2 == i3 || i1 == i3) {
+                        while(i2 == i3 || i1 == i3){
+                        index = (int)(Math.random()*lista.size());
+                        i3 = index;
+                        }
+                    }
+                }
                 jLabel1.setText(lista.get(index).getPregunta());
                 jBRespuestaA.setText(lista.get(index).getA());
                 jBRespuestaB.setText(lista.get(index).getB());
@@ -372,16 +398,16 @@ public class Intermedio extends javax.swing.JFrame {
                 jBRespuestaB.setEnabled(true);
                 jBRespuestaC.setEnabled(true);
                 jBRespuestaD.setEnabled(true);
-                if (puntos >= 3) {
+                if (puntos >= 6) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Intermedias");
-                    Dificil p1 = new Dificil();
+                    Dificil p1 = new Dificil(name, puntos);
                     p1.setVisible(true);
                     this.setVisible(false);
                 } 
         }
         else{
         JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final();
+            Final p = new Final(name, puntos);
             p.setVisible(true);
             this.setVisible(false);
         }
@@ -393,6 +419,24 @@ public class Intermedio extends javax.swing.JFrame {
         if (selected == correcta) {
             JOptionPane.showMessageDialog(null, "Correcto");           
                 index = (int)(Math.random()*lista.size());
+                if (puntos == 3) {
+                i2 = index;
+                if (i1 == i2) {
+                while(i1 == i2){
+                    index = (int)(Math.random()*lista.size());
+                    i2 = index;
+                    }
+                  }
+                }
+                if (puntos == 4) {
+                    i3 = index;
+                    if (i2 == i3 || i1 == i3) {
+                        while(i2 == i3 || i1 == i3){
+                        index = (int)(Math.random()*lista.size());
+                        i3 = index;
+                        }
+                    }
+                }
                 jLabel1.setText(lista.get(index).getPregunta());
                 jBRespuestaA.setText(lista.get(index).getA());
                 jBRespuestaB.setText(lista.get(index).getB());
@@ -403,16 +447,16 @@ public class Intermedio extends javax.swing.JFrame {
                 jBRespuestaB.setEnabled(true);
                 jBRespuestaC.setEnabled(true);
                 jBRespuestaD.setEnabled(true);
-                if (puntos >= 3) {
+                if (puntos >= 6) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Intermedias");
-                    Dificil p1 = new Dificil();
+                    Dificil p1 = new Dificil(name, puntos);
                     p1.setVisible(true);
                     this.setVisible(false);
                 } 
         }
         else{
         JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final();
+            Final p = new Final(name, puntos);
             p.setVisible(true);
             this.setVisible(false);
         }
@@ -424,6 +468,24 @@ public class Intermedio extends javax.swing.JFrame {
         if (selected == correcta) {
             JOptionPane.showMessageDialog(null, "Correcto");           
                 index = (int)(Math.random()*lista.size());
+                if (puntos == 3) {
+                i2 = index;
+                if (i1 == i2) {
+                while(i1 == i2){
+                    index = (int)(Math.random()*lista.size());
+                    i2 = index;
+                    }
+                  }
+                }
+                if (puntos == 4) {
+                    i3 = index;
+                    if (i2 == i3 || i1 == i3) {
+                        while(i2 == i3 || i1 == i3){
+                        index = (int)(Math.random()*lista.size());
+                        i3 = index;
+                        }
+                    }
+                }
                 jLabel1.setText(lista.get(index).getPregunta());
                 jBRespuestaA.setText(lista.get(index).getA());
                 jBRespuestaB.setText(lista.get(index).getB());
@@ -434,16 +496,16 @@ public class Intermedio extends javax.swing.JFrame {
                 jBRespuestaB.setEnabled(true);
                 jBRespuestaC.setEnabled(true);
                 jBRespuestaD.setEnabled(true);
-                if (puntos >= 3) {
+                if (puntos >= 6) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Intermedias");
-                    Dificil p1 = new Dificil();
+                    Dificil p1 = new Dificil(name, puntos);
                     p1.setVisible(true);
                     this.setVisible(false);
                 } 
         }
         else{
         JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final();
+            Final p = new Final(name, puntos);
             p.setVisible(true);
             this.setVisible(false);
         }
@@ -455,6 +517,24 @@ public class Intermedio extends javax.swing.JFrame {
         if (selected == correcta) {
             JOptionPane.showMessageDialog(null, "Correcto");           
                 index = (int)(Math.random()*lista.size());
+                if (puntos == 3) {
+                i2 = index;
+                if (i1 == i2) {
+                while(i1 == i2){
+                    index = (int)(Math.random()*lista.size());
+                    i2 = index;
+                    }
+                  }
+                }
+                if (puntos == 4) {
+                    i3 = index;
+                    if (i2 == i3 || i1 == i3) {
+                        while(i2 == i3 || i1 == i3){
+                        index = (int)(Math.random()*lista.size());
+                        i3 = index;
+                        }
+                    }
+                }
                 jLabel1.setText(lista.get(index).getPregunta());
                 jBRespuestaA.setText(lista.get(index).getA());
                 jBRespuestaB.setText(lista.get(index).getB());
@@ -465,16 +545,16 @@ public class Intermedio extends javax.swing.JFrame {
                 jBRespuestaB.setEnabled(true);
                 jBRespuestaC.setEnabled(true);
                 jBRespuestaD.setEnabled(true);
-                if (puntos >= 3) {
+                if (puntos >= 6) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Intermedias");
-                    Dificil p1 = new Dificil();
+                    Dificil p1 = new Dificil(name, puntos);
                     p1.setVisible(true);
                     this.setVisible(false);
                 } 
         }
         else{
         JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final();
+            Final p = new Final(name, puntos);
             p.setVisible(true);
             this.setVisible(false);
         }

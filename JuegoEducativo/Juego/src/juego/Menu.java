@@ -102,8 +102,9 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        String name = jTextField1.getText();
         this.setVisible(false);
-        Reglas pre = new Reglas();
+        Reglas pre = new Reglas(name);
         pre.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 

@@ -17,10 +17,16 @@ public class Reglas extends javax.swing.JFrame {
      * Creates new form Reglas
      */
     Fuentes tipoFuentes;
-    public Reglas() {
+    String name;
+    public Reglas(String nameparam) {
         initComponents();
+        name = nameparam;
         tipoFuentes = new Fuentes();
         jLabel3.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 36));     
+    }
+
+    private Reglas() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /**
@@ -177,7 +183,7 @@ public class Reglas extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         this.setVisible(false);
-        Facil pre = new Facil();
+        Facil pre = new Facil(name);
         pre.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
