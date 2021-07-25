@@ -5,6 +5,7 @@
  */
 package juego;
 import Fuentes.Fuentes;
+import javax.swing.JOptionPane;
 /**
  *
  * @author Armando
@@ -103,9 +104,14 @@ public class Menu extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String name = jTextField1.getText();
+        if (name.equals("")) {
+            JOptionPane.showMessageDialog(null, "Debes de colocar tu nombre");
+        }
+        else{
         this.setVisible(false);
         Reglas pre = new Reglas(name);
         pre.setVisible(true);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

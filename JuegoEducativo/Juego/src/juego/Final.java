@@ -24,7 +24,21 @@ public class Final extends javax.swing.JFrame {
         jTextField2.setText(nameparam);
         tipoFuentes = new Fuentes();
         int puntos = points*100;
+        String nivel = "";
+        if (puntos <= 300) {
+            nivel = "Principiante";
+        }
+        else if (puntos > 300 && puntos <= 600) {
+            nivel = "Intermedio";
+        }
+        else if (puntos > 600 && puntos <= 800) {
+            nivel = "Avanzado";
+        }
+        else if (puntos == 900) {
+            nivel = "Master";
+        }
         jTextField1.setText(Integer.toString(puntos));
+        jTextField3.setText(nivel);
         jLabel1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 60));
         jLabel3.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 60));
     }
