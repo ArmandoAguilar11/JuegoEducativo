@@ -25,9 +25,25 @@ public class Dificil extends javax.swing.JFrame {
     String name;
     Fuentes tipoFuentes;
     ArrayList<Difficult> lista = new ArrayList();
-    public Dificil(String nameparam, int points) {
+    public Dificil(String nameparam, int points, boolean com1, boolean com2) {
         initComponents();
         name = nameparam;
+        if (com1 == false && com2 == false) {
+            jButton2.setEnabled(false);
+            jButton1.setEnabled(false);
+        }
+        else if (com1 == false && com2 == true) {
+            jButton2.setEnabled(false);
+            jButton1.setEnabled(true);
+        }
+        else if (com1 == true && com2 == false) {
+            jButton2.setEnabled(true);
+            jButton1.setEnabled(false);
+        }
+        else if (com1 == true && com2 == true) {
+            jButton2.setEnabled(true);
+            jButton1.setEnabled(true);
+        }
         puntos = points;
         tipoFuentes = new Fuentes();
         jLabel1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 24));
@@ -242,6 +258,8 @@ public class Dificil extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setExtendedState(6);
+        setState(6);
 
         kGradientPanel1.setkEndColor(new java.awt.Color(247, 217, 206));
         kGradientPanel1.setkGradientFocus(60);
@@ -352,26 +370,7 @@ public class Dificil extends javax.swing.JFrame {
                     .addGap(131, 131, 131)))
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1309, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(kGradientPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 539, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(kGradientPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        getContentPane().add(kGradientPanel1, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -383,7 +382,7 @@ public class Dificil extends javax.swing.JFrame {
         if (selected.equals(correcta)) {
             JOptionPane.showMessageDialog(null, "Correcto");           
                 index = (int)(Math.random()*lista.size());
-                if (puntos == 0) {
+                if (puntos == 6) {
                 i2 = index;
                 if (i1 == i2) {
                 while(i1 == i2){
@@ -392,7 +391,7 @@ public class Dificil extends javax.swing.JFrame {
                     }
                   }
                 }
-                if (puntos == 1) {
+                if (puntos == 7) {
                     i3 = index;
                     if (i2 == i3 || i1 == i3) {
                         while(i2 == i3 || i1 == i3){
@@ -411,7 +410,7 @@ public class Dificil extends javax.swing.JFrame {
                 jBRespuestaB.setEnabled(true);
                 jBRespuestaC.setEnabled(true);
                 jBRespuestaD.setEnabled(true);
-                if (puntos >= 3) {
+                if (puntos >= 9) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Difíciles");
                     Final p1 = new Final(name, puntos);
                     p1.setVisible(true);
@@ -433,7 +432,7 @@ public class Dificil extends javax.swing.JFrame {
         if (selected.equals(correcta)) {
             JOptionPane.showMessageDialog(null, "Correcto");           
                 index = (int)(Math.random()*lista.size());
-                if (puntos == 0) {
+                if (puntos == 6) {
                 i2 = index;
                 if (i1 == i2) {
                 while(i1 == i2){
@@ -442,7 +441,7 @@ public class Dificil extends javax.swing.JFrame {
                     }
                   }
                 }
-                if (puntos == 1) {
+                if (puntos == 7) {
                     i3 = index;
                     if (i2 == i3 || i1 == i3) {
                         while(i2 == i3 || i1 == i3){
@@ -461,7 +460,7 @@ public class Dificil extends javax.swing.JFrame {
                 jBRespuestaB.setEnabled(true);
                 jBRespuestaC.setEnabled(true);
                 jBRespuestaD.setEnabled(true);
-                if (puntos >= 3) {
+                if (puntos >= 9) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Difíciles");
                     Final p1 = new Final(name, puntos);
                     p1.setVisible(true);
@@ -483,7 +482,7 @@ public class Dificil extends javax.swing.JFrame {
         if (selected.equals(correcta)) {
             JOptionPane.showMessageDialog(null, "Correcto");           
                 index = (int)(Math.random()*lista.size());
-                if (puntos == 0) {
+                if (puntos == 6) {
                 i2 = index;
                 if (i1 == i2) {
                 while(i1 == i2){
@@ -492,7 +491,7 @@ public class Dificil extends javax.swing.JFrame {
                     }
                   }
                 }
-                if (puntos == 1) {
+                if (puntos == 7) {
                     i3 = index;
                     if (i2 == i3 || i1 == i3) {
                         while(i2 == i3 || i1 == i3){
@@ -511,7 +510,7 @@ public class Dificil extends javax.swing.JFrame {
                 jBRespuestaB.setEnabled(true);
                 jBRespuestaC.setEnabled(true);
                 jBRespuestaD.setEnabled(true);
-                if (puntos >= 3) {
+                if (puntos >= 9) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Difíciles");
                     Final p1 = new Final(name, puntos);
                     p1.setVisible(true);
@@ -533,7 +532,7 @@ public class Dificil extends javax.swing.JFrame {
         if (selected.equals(correcta)) {
             JOptionPane.showMessageDialog(null, "Correcto");           
                 index = (int)(Math.random()*lista.size());
-                if (puntos == 0) {
+                if (puntos == 6) {
                 i2 = index;
                 if (i1 == i2) {
                 while(i1 == i2){
@@ -542,7 +541,7 @@ public class Dificil extends javax.swing.JFrame {
                     }
                   }
                 }
-                if (puntos == 1) {
+                if (puntos == 7) {
                     i3 = index;
                     if (i2 == i3 || i1 == i3) {
                         while(i2 == i3 || i1 == i3){
@@ -561,7 +560,7 @@ public class Dificil extends javax.swing.JFrame {
                 jBRespuestaB.setEnabled(true);
                 jBRespuestaC.setEnabled(true);
                 jBRespuestaD.setEnabled(true);
-                if (puntos >= 3) {
+                if (puntos >= 9) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Difíciles");
                     Final p1 = new Final(name, puntos);
                     p1.setVisible(true);

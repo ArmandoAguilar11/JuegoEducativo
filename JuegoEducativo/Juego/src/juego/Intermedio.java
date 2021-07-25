@@ -23,10 +23,13 @@ public class Intermedio extends javax.swing.JFrame {
     int i1, i2, i3;
     int puntos;
     String name;
+    boolean comodin1, comodin2;
     ArrayList<Intermediate> lista = new ArrayList();
     public Intermedio(String nameparam, int points, boolean com1, boolean com2) {
         initComponents();
         name = nameparam;
+        comodin1 = com1;
+        comodin2 = com2;
         if (com1 == false && com2 == false) {
             jButton2.setEnabled(false);
             jButton1.setEnabled(false);
@@ -400,7 +403,7 @@ public class Intermedio extends javax.swing.JFrame {
                 jBRespuestaD.setEnabled(true);
                 if (puntos >= 6) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Intermedias");
-                    Dificil p1 = new Dificil(name, puntos);
+                    Dificil p1 = new Dificil(name, puntos, comodin1, comodin2);
                     p1.setVisible(true);
                     this.setVisible(false);
                 } 
@@ -449,7 +452,7 @@ public class Intermedio extends javax.swing.JFrame {
                 jBRespuestaD.setEnabled(true);
                 if (puntos >= 6) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Intermedias");
-                    Dificil p1 = new Dificil(name, puntos);
+                    Dificil p1 = new Dificil(name, puntos, comodin1, comodin2);
                     p1.setVisible(true);
                     this.setVisible(false);
                 } 
@@ -498,7 +501,7 @@ public class Intermedio extends javax.swing.JFrame {
                 jBRespuestaD.setEnabled(true);
                 if (puntos >= 6) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Intermedias");
-                    Dificil p1 = new Dificil(name, puntos);
+                    Dificil p1 = new Dificil(name, puntos, comodin1, comodin2);
                     p1.setVisible(true);
                     this.setVisible(false);
                 } 
@@ -547,7 +550,7 @@ public class Intermedio extends javax.swing.JFrame {
                 jBRespuestaD.setEnabled(true);
                 if (puntos >= 6) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Intermedias");
-                    Dificil p1 = new Dificil(name, puntos);
+                    Dificil p1 = new Dificil(name, puntos, comodin1, comodin2);
                     p1.setVisible(true);
                     this.setVisible(false);
                 } 
