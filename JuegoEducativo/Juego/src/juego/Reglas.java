@@ -54,6 +54,7 @@ public class Reglas extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setExtendedState(6);
 
         kGradientPanel1.setkEndColor(new java.awt.Color(247, 217, 206));
         kGradientPanel1.setkGradientFocus(60);

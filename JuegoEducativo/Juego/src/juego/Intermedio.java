@@ -48,7 +48,7 @@ public class Intermedio extends javax.swing.JFrame {
         }
         puntos = points;
         tipoFuentes = new Fuentes();
-        jLabel1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 24));
+        jTextArea1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 30));
         Intermediate obj = new Intermediate();
         obj.setPregunta("Al arreglo bidimensional se le conoce con el nombre de:");
         obj.setCorrecta("Matriz");
@@ -59,9 +59,7 @@ public class Intermedio extends javax.swing.JFrame {
         lista.add(obj);
         obj = null;
         obj = new Intermediate();
-        obj.setPregunta("“Es la capacidad que tienen los objetos de una clase en ofrecer respuesta  distinta\n" +
-        "e independiente  en  función  de  los  parámetros  (diferentes  implementaciones)\n" +
-        "utilizados durante su invocación.”. El concepto anterior pertenece a:");
+        obj.setPregunta("“Es la capacidad que tienen los objetos de una clase en ofrecer respuesta  distinta e independiente  en  función  de  los  parámetros  (diferentes  implementaciones) utilizados durante su invocación.”. El concepto anterior pertenece a:");
         obj.setCorrecta("Polimorfismo");
         obj.setA("Polimorfismo");
         obj.setB("Array");
@@ -70,9 +68,7 @@ public class Intermedio extends javax.swing.JFrame {
         lista.add(obj);
         obj = null;
         obj = new Intermediate();
-        obj.setPregunta("Se utiliza para describir un fichero o un campo de datos con más detalle.\n" +
-        "En la programación orientada a objetos, estos son una propiedad o característica\n" +
-        "que se puede asignar a un objeto (elemento)");
+        obj.setPregunta("Se utiliza para describir un fichero o un campo de datos con más detalle. En la programación orientada a objetos, estos son una propiedad o característica que se puede asignar a un objeto (elemento)");
         obj.setCorrecta("Atributo");
         obj.setA("Variable");
         obj.setB("Parámetro");
@@ -180,8 +176,7 @@ public class Intermedio extends javax.swing.JFrame {
         lista.add(obj);
         obj = null;
         obj = new Intermediate();
-        obj.setPregunta("Es la descripción de un conjunto de objetos similares; consta de métodos y de datos\n" +
-        "que resumen las características comunes de dicho conjunto, estamos hablando de:");
+        obj.setPregunta("Es la descripción de un conjunto de objetos similares; consta de métodos y de datos que resumen las características comunes de dicho conjunto, estamos hablando de:");
         obj.setCorrecta("Clase");
         obj.setA("Ciclo Do While");
         obj.setB("Objeto");
@@ -219,7 +214,7 @@ public class Intermedio extends javax.swing.JFrame {
         obj = new Intermediate();         
         index = (int)(Math.random()*lista.size());
         i1 = index;
-        jLabel1.setText(lista.get(index).getPregunta());
+        jTextArea1.setText(lista.get(index).getPregunta());
         jBRespuestaA.setText(lista.get(index).getA());
         jBRespuestaB.setText(lista.get(index).getB());
         jBRespuestaC.setText(lista.get(index).getC());
@@ -240,14 +235,13 @@ public class Intermedio extends javax.swing.JFrame {
     private void initComponents() {
 
         kGradientPanel1 = new keeptoo.KGradientPanel();
-        jLabel1 = new javax.swing.JLabel();
         jBRespuestaC = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jBRespuestaA = new javax.swing.JButton();
         jBRespuestaB = new javax.swing.JButton();
         jBRespuestaD = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setExtendedState(6);
@@ -256,9 +250,9 @@ public class Intermedio extends javax.swing.JFrame {
         kGradientPanel1.setkEndColor(new java.awt.Color(247, 217, 206));
         kGradientPanel1.setkGradientFocus(60);
         kGradientPanel1.setkStartColor(new java.awt.Color(247, 177, 197));
+        kGradientPanel1.setPreferredSize(new java.awt.Dimension(1319, 566));
 
-        jLabel1.setText("jLabel1");
-
+        jBRespuestaC.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jBRespuestaC.setText("jButton1");
         jBRespuestaC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -266,8 +260,7 @@ public class Intermedio extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("jLabel2");
-
+        jBRespuestaA.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jBRespuestaA.setText("jButton1");
         jBRespuestaA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -275,6 +268,7 @@ public class Intermedio extends javax.swing.JFrame {
             }
         });
 
+        jBRespuestaB.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jBRespuestaB.setText("jButton1");
         jBRespuestaB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -282,6 +276,7 @@ public class Intermedio extends javax.swing.JFrame {
             }
         });
 
+        jBRespuestaD.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jBRespuestaD.setText("jButton1");
         jBRespuestaD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -303,52 +298,64 @@ public class Intermedio extends javax.swing.JFrame {
             }
         });
 
+        jTextArea1.setEditable(false);
+        jTextArea1.setBackground(new java.awt.Color(247, 177, 197));
+        jTextArea1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(2);
+        jTextArea1.setTabSize(0);
+        jTextArea1.setWrapStyleWord(true);
+        jTextArea1.setAlignmentX(0.0F);
+        jTextArea1.setAlignmentY(0.0F);
+        jTextArea1.setAutoscrolls(false);
+        jTextArea1.setBorder(null);
+        jTextArea1.setCaretColor(new java.awt.Color(69, 73, 74));
+        jTextArea1.setMargin(new java.awt.Insets(0, 0, 0, 1500));
+        jTextArea1.setOpaque(false);
+        jTextArea1.setSelectedTextColor(new java.awt.Color(247, 177, 197));
+
         javax.swing.GroupLayout kGradientPanel1Layout = new javax.swing.GroupLayout(kGradientPanel1);
         kGradientPanel1.setLayout(kGradientPanel1Layout);
         kGradientPanel1Layout.setHorizontalGroup(
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel1Layout.createSequentialGroup()
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jBRespuestaB, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(kGradientPanel1Layout.createSequentialGroup()
                         .addGap(40, 40, 40)
                         .addComponent(jBRespuestaC, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 203, Short.MAX_VALUE)
-                        .addComponent(jBRespuestaD, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jBRespuestaB, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 105, Short.MAX_VALUE)
+                        .addComponent(jBRespuestaD, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1))
-                .addGap(291, 291, 291)
-                .addComponent(jButton2)
-                .addGap(87, 87, 87)
-                .addComponent(jButton1)
-                .addGap(64, 64, 64))
+                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
+                        .addComponent(jButton2)
+                        .addGap(87, 87, 87)
+                        .addComponent(jButton1)
+                        .addGap(64, 64, 64))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
+                        .addComponent(jTextArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 840, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(189, 189, 189))))
             .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(kGradientPanel1Layout.createSequentialGroup()
                     .addGap(41, 41, 41)
                     .addComponent(jBRespuestaA, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(738, Short.MAX_VALUE)))
+                    .addContainerGap(640, Short.MAX_VALUE)))
         );
         kGradientPanel1Layout.setVerticalGroup(
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addComponent(jLabel1))
-                    .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1)
-                            .addComponent(jButton2))))
-                .addGap(85, 85, 85)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 180, Short.MAX_VALUE)
+                .addContainerGap()
+                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
+                .addGap(50, 50, 50)
+                .addComponent(jTextArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
                 .addComponent(jBRespuestaB, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -357,7 +364,7 @@ public class Intermedio extends javax.swing.JFrame {
                 .addGap(48, 48, 48))
             .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
-                    .addContainerGap(338, Short.MAX_VALUE)
+                    .addContainerGap(344, Short.MAX_VALUE)
                     .addComponent(jBRespuestaA, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(131, 131, 131)))
         );
@@ -391,7 +398,7 @@ public class Intermedio extends javax.swing.JFrame {
                         }
                     }
                 }
-                jLabel1.setText(lista.get(index).getPregunta());
+                jTextArea1.setText(lista.get(index).getPregunta());
                 jBRespuestaA.setText(lista.get(index).getA());
                 jBRespuestaB.setText(lista.get(index).getB());
                 jBRespuestaC.setText(lista.get(index).getC());
@@ -440,7 +447,7 @@ public class Intermedio extends javax.swing.JFrame {
                         }
                     }
                 }
-                jLabel1.setText(lista.get(index).getPregunta());
+                jTextArea1.setText(lista.get(index).getPregunta());
                 jBRespuestaA.setText(lista.get(index).getA());
                 jBRespuestaB.setText(lista.get(index).getB());
                 jBRespuestaC.setText(lista.get(index).getC());
@@ -489,7 +496,7 @@ public class Intermedio extends javax.swing.JFrame {
                         }
                     }
                 }
-                jLabel1.setText(lista.get(index).getPregunta());
+                jTextArea1.setText(lista.get(index).getPregunta());
                 jBRespuestaA.setText(lista.get(index).getA());
                 jBRespuestaB.setText(lista.get(index).getB());
                 jBRespuestaC.setText(lista.get(index).getC());
@@ -538,7 +545,7 @@ public class Intermedio extends javax.swing.JFrame {
                         }
                     }
                 }
-                jLabel1.setText(lista.get(index).getPregunta());
+                jTextArea1.setText(lista.get(index).getPregunta());
                 jBRespuestaA.setText(lista.get(index).getA());
                 jBRespuestaB.setText(lista.get(index).getB());
                 jBRespuestaC.setText(lista.get(index).getC());
@@ -641,8 +648,7 @@ public class Intermedio extends javax.swing.JFrame {
     private javax.swing.JButton jBRespuestaD;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JTextArea jTextArea1;
     private keeptoo.KGradientPanel kGradientPanel1;
     // End of variables declaration//GEN-END:variables
 }
