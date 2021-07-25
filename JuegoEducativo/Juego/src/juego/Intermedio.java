@@ -235,13 +235,14 @@ public class Intermedio extends javax.swing.JFrame {
     private void initComponents() {
 
         kGradientPanel1 = new keeptoo.KGradientPanel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jTextArea1 = new javax.swing.JTextArea();
         jBRespuestaC = new javax.swing.JButton();
         jBRespuestaA = new javax.swing.JButton();
         jBRespuestaB = new javax.swing.JButton();
         jBRespuestaD = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jTextArea1 = new javax.swing.JTextArea();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setExtendedState(6);
@@ -252,38 +253,7 @@ public class Intermedio extends javax.swing.JFrame {
         kGradientPanel1.setkStartColor(new java.awt.Color(247, 177, 197));
         kGradientPanel1.setPreferredSize(new java.awt.Dimension(1319, 566));
 
-        jBRespuestaC.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jBRespuestaC.setText("jButton1");
-        jBRespuestaC.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBRespuestaCActionPerformed(evt);
-            }
-        });
-
-        jBRespuestaA.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jBRespuestaA.setText("jButton1");
-        jBRespuestaA.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBRespuestaAActionPerformed(evt);
-            }
-        });
-
-        jBRespuestaB.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jBRespuestaB.setText("jButton1");
-        jBRespuestaB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBRespuestaBActionPerformed(evt);
-            }
-        });
-
-        jBRespuestaD.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jBRespuestaD.setText("jButton1");
-        jBRespuestaD.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBRespuestaDActionPerformed(evt);
-            }
-        });
-
+        jButton1.setBackground(new java.awt.Color(239, 138, 170));
         jButton1.setText("50/50");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -291,6 +261,7 @@ public class Intermedio extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setBackground(new java.awt.Color(239, 138, 170));
         jButton2.setText("Llamada");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -314,37 +285,73 @@ public class Intermedio extends javax.swing.JFrame {
         jTextArea1.setOpaque(false);
         jTextArea1.setSelectedTextColor(new java.awt.Color(247, 177, 197));
 
+        jBRespuestaC.setBackground(new java.awt.Color(239, 138, 170));
+        jBRespuestaC.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jBRespuestaC.setText("jButton1");
+        jBRespuestaC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBRespuestaCActionPerformed(evt);
+            }
+        });
+
+        jBRespuestaA.setBackground(new java.awt.Color(239, 138, 170));
+        jBRespuestaA.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jBRespuestaA.setText("jButton1");
+        jBRespuestaA.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jBRespuestaA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBRespuestaAActionPerformed(evt);
+            }
+        });
+
+        jBRespuestaB.setBackground(new java.awt.Color(239, 138, 170));
+        jBRespuestaB.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jBRespuestaB.setText("jButton1");
+        jBRespuestaB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBRespuestaBActionPerformed(evt);
+            }
+        });
+
+        jBRespuestaD.setBackground(new java.awt.Color(239, 138, 170));
+        jBRespuestaD.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jBRespuestaD.setText("jButton1");
+        jBRespuestaD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBRespuestaDActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/1qq.png"))); // NOI18N
+
         javax.swing.GroupLayout kGradientPanel1Layout = new javax.swing.GroupLayout(kGradientPanel1);
         kGradientPanel1.setLayout(kGradientPanel1Layout);
         kGradientPanel1Layout.setHorizontalGroup(
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel1Layout.createSequentialGroup()
+                .addContainerGap(87, Short.MAX_VALUE)
+                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jBRespuestaC, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBRespuestaA, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jBRespuestaB, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jBRespuestaC, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 105, Short.MAX_VALUE)
-                        .addComponent(jBRespuestaD, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                    .addComponent(jBRespuestaB, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBRespuestaD, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(87, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton2)
-                        .addGap(87, 87, 87)
-                        .addComponent(jButton1)
-                        .addGap(64, 64, 64))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
-                        .addComponent(jTextArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 840, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(189, 189, 189))))
-            .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                    .addGap(41, 41, 41)
-                    .addComponent(jBRespuestaA, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(640, Short.MAX_VALUE)))
+                .addComponent(jButton2)
+                .addGap(87, 87, 87)
+                .addComponent(jButton1)
+                .addGap(64, 64, 64))
+            .addGroup(kGradientPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTextArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 1116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kGradientPanel1Layout.setVerticalGroup(
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -353,222 +360,25 @@ public class Intermedio extends javax.swing.JFrame {
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
-                .addGap(50, 50, 50)
-                .addComponent(jTextArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
-                .addComponent(jBRespuestaB, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBRespuestaB, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBRespuestaA, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBRespuestaC, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jBRespuestaD, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(48, 48, 48))
-            .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
-                    .addContainerGap(344, Short.MAX_VALUE)
-                    .addComponent(jBRespuestaA, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(131, 131, 131)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(kGradientPanel1, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jBRespuestaAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaAActionPerformed
-        String selected = jBRespuestaA.getText();
-        String correcta = lista.get(index).getCorrecta();
-        if (selected == correcta) {
-            JOptionPane.showMessageDialog(null, "Correcto");           
-                index = (int)(Math.random()*lista.size());
-                if (puntos == 3) {
-                i2 = index;
-                if (i1 == i2) {
-                while(i1 == i2){
-                    index = (int)(Math.random()*lista.size());
-                    i2 = index;
-                    }
-                  }
-                }
-                if (puntos == 4) {
-                    i3 = index;
-                    if (i2 == i3 || i1 == i3) {
-                        while(i2 == i3 || i1 == i3){
-                        index = (int)(Math.random()*lista.size());
-                        i3 = index;
-                        }
-                    }
-                }
-                jTextArea1.setText(lista.get(index).getPregunta());
-                jBRespuestaA.setText(lista.get(index).getA());
-                jBRespuestaB.setText(lista.get(index).getB());
-                jBRespuestaC.setText(lista.get(index).getC());
-                jBRespuestaD.setText(lista.get(index).getD());
-                puntos++;
-                jBRespuestaA.setEnabled(true);
-                jBRespuestaB.setEnabled(true);
-                jBRespuestaC.setEnabled(true);
-                jBRespuestaD.setEnabled(true);
-                if (puntos >= 6) {
-                    JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Intermedias");
-                    Dificil p1 = new Dificil(name, puntos, comodin1, comodin2);
-                    p1.setVisible(true);
-                    this.setVisible(false);
-                } 
-        }
-        else{
-        JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final(name, puntos);
-            p.setVisible(true);
-            this.setVisible(false);
-        }
-    }//GEN-LAST:event_jBRespuestaAActionPerformed
-
-    private void jBRespuestaBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaBActionPerformed
-        String selected = jBRespuestaB.getText();
-        String correcta = lista.get(index).getCorrecta();
-        if (selected == correcta) {
-            JOptionPane.showMessageDialog(null, "Correcto");           
-                index = (int)(Math.random()*lista.size());
-                if (puntos == 3) {
-                i2 = index;
-                if (i1 == i2) {
-                while(i1 == i2){
-                    index = (int)(Math.random()*lista.size());
-                    i2 = index;
-                    }
-                  }
-                }
-                if (puntos == 4) {
-                    i3 = index;
-                    if (i2 == i3 || i1 == i3) {
-                        while(i2 == i3 || i1 == i3){
-                        index = (int)(Math.random()*lista.size());
-                        i3 = index;
-                        }
-                    }
-                }
-                jTextArea1.setText(lista.get(index).getPregunta());
-                jBRespuestaA.setText(lista.get(index).getA());
-                jBRespuestaB.setText(lista.get(index).getB());
-                jBRespuestaC.setText(lista.get(index).getC());
-                jBRespuestaD.setText(lista.get(index).getD());
-                puntos++;
-                jBRespuestaA.setEnabled(true);
-                jBRespuestaB.setEnabled(true);
-                jBRespuestaC.setEnabled(true);
-                jBRespuestaD.setEnabled(true);
-                if (puntos >= 6) {
-                    JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Intermedias");
-                    Dificil p1 = new Dificil(name, puntos, comodin1, comodin2);
-                    p1.setVisible(true);
-                    this.setVisible(false);
-                } 
-        }
-        else{
-        JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final(name, puntos);
-            p.setVisible(true);
-            this.setVisible(false);
-        }
-    }//GEN-LAST:event_jBRespuestaBActionPerformed
-
-    private void jBRespuestaCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaCActionPerformed
-        String selected = jBRespuestaC.getText();
-        String correcta = lista.get(index).getCorrecta();
-        if (selected == correcta) {
-            JOptionPane.showMessageDialog(null, "Correcto");           
-                index = (int)(Math.random()*lista.size());
-                if (puntos == 3) {
-                i2 = index;
-                if (i1 == i2) {
-                while(i1 == i2){
-                    index = (int)(Math.random()*lista.size());
-                    i2 = index;
-                    }
-                  }
-                }
-                if (puntos == 4) {
-                    i3 = index;
-                    if (i2 == i3 || i1 == i3) {
-                        while(i2 == i3 || i1 == i3){
-                        index = (int)(Math.random()*lista.size());
-                        i3 = index;
-                        }
-                    }
-                }
-                jTextArea1.setText(lista.get(index).getPregunta());
-                jBRespuestaA.setText(lista.get(index).getA());
-                jBRespuestaB.setText(lista.get(index).getB());
-                jBRespuestaC.setText(lista.get(index).getC());
-                jBRespuestaD.setText(lista.get(index).getD());
-                puntos++;
-                jBRespuestaA.setEnabled(true);
-                jBRespuestaB.setEnabled(true);
-                jBRespuestaC.setEnabled(true);
-                jBRespuestaD.setEnabled(true);
-                if (puntos >= 6) {
-                    JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Intermedias");
-                    Dificil p1 = new Dificil(name, puntos, comodin1, comodin2);
-                    p1.setVisible(true);
-                    this.setVisible(false);
-                } 
-        }
-        else{
-        JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final(name, puntos);
-            p.setVisible(true);
-            this.setVisible(false);
-        }
-    }//GEN-LAST:event_jBRespuestaCActionPerformed
-
-    private void jBRespuestaDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaDActionPerformed
-        String selected = jBRespuestaD.getText();
-        String correcta = lista.get(index).getCorrecta();
-        if (selected == correcta) {
-            JOptionPane.showMessageDialog(null, "Correcto");           
-                index = (int)(Math.random()*lista.size());
-                if (puntos == 3) {
-                i2 = index;
-                if (i1 == i2) {
-                while(i1 == i2){
-                    index = (int)(Math.random()*lista.size());
-                    i2 = index;
-                    }
-                  }
-                }
-                if (puntos == 4) {
-                    i3 = index;
-                    if (i2 == i3 || i1 == i3) {
-                        while(i2 == i3 || i1 == i3){
-                        index = (int)(Math.random()*lista.size());
-                        i3 = index;
-                        }
-                    }
-                }
-                jTextArea1.setText(lista.get(index).getPregunta());
-                jBRespuestaA.setText(lista.get(index).getA());
-                jBRespuestaB.setText(lista.get(index).getB());
-                jBRespuestaC.setText(lista.get(index).getC());
-                jBRespuestaD.setText(lista.get(index).getD());
-                puntos++;
-                jBRespuestaA.setEnabled(true);
-                jBRespuestaB.setEnabled(true);
-                jBRespuestaC.setEnabled(true);
-                jBRespuestaD.setEnabled(true);
-                if (puntos >= 6) {
-                    JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Intermedias");
-                    Dificil p1 = new Dificil(name, puntos, comodin1, comodin2);
-                    p1.setVisible(true);
-                    this.setVisible(false);
-                } 
-        }
-        else{
-        JOptionPane.showMessageDialog(null, "Incorrecto");
-            Final p = new Final(name, puntos);
-            p.setVisible(true);
-            this.setVisible(false);
-        }
-    }//GEN-LAST:event_jBRespuestaDActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         String correcta = lista.get(index).getCorrecta();
@@ -605,6 +415,203 @@ public class Intermedio extends javax.swing.JFrame {
         }
         jButton1.setEnabled(false);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jBRespuestaCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaCActionPerformed
+        String selected = jBRespuestaC.getText();
+        String correcta = lista.get(index).getCorrecta();
+        if (selected.equals(correcta)) {
+            JOptionPane.showMessageDialog(null, "Correcto");
+            index = (int)(Math.random()*lista.size());
+            if (puntos == 0) {
+                i2 = index;
+                if (i1 == i2) {
+                    while(i1 == i2){
+                        index = (int)(Math.random()*lista.size());
+                        i2 = index;
+                    }
+                }
+            }
+            if (puntos == 1) {
+                i3 = index;
+                if (i2 == i3 || i1 == i3) {
+                    while(i2 == i3 || i1 == i3){
+                        index = (int)(Math.random()*lista.size());
+                        i3 = index;
+                    }
+                }
+            }
+            jLabel1.setText(lista.get(index).getPregunta());
+            jBRespuestaA.setText(lista.get(index).getA());
+            jBRespuestaB.setText(lista.get(index).getB());
+            jBRespuestaC.setText(lista.get(index).getC());
+            jBRespuestaD.setText(lista.get(index).getD());
+            puntos++;
+            jBRespuestaA.setEnabled(true);
+            jBRespuestaB.setEnabled(true);
+            jBRespuestaC.setEnabled(true);
+            jBRespuestaD.setEnabled(true);
+            if (puntos >= 3) {
+                JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Faciles");
+                Intermedio p1 = new Intermedio(name, puntos, comodin1, comodin2);
+                p1.setVisible(true);
+                this.setVisible(false);
+            }
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Incorrecto");
+            Final p = new Final(name, puntos);
+            p.setVisible(true);
+            this.setVisible(false);
+        }
+    }//GEN-LAST:event_jBRespuestaCActionPerformed
+
+    private void jBRespuestaAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaAActionPerformed
+
+        String selected = jBRespuestaA.getText();
+        String correcta = lista.get(index).getCorrecta();
+        if (selected.equals(correcta)) {
+            JOptionPane.showMessageDialog(null, "Correcto");
+            index = (int)(Math.random()*lista.size());
+            if (puntos == 0) {
+                i2 = index;
+                if (i1 == i2) {
+                    while(i1 == i2){
+                        index = (int)(Math.random()*lista.size());
+                        i2 = index;
+                    }
+                }
+            }
+            if (puntos == 1) {
+                i3 = index;
+                if (i2 == i3 || i1 == i3) {
+                    while(i2 == i3 || i1 == i3){
+                        index = (int)(Math.random()*lista.size());
+                        i3 = index;
+                    }
+                }
+            }
+            jLabel1.setText(lista.get(index).getPregunta());
+            jBRespuestaA.setText(lista.get(index).getA());
+            jBRespuestaB.setText(lista.get(index).getB());
+            jBRespuestaC.setText(lista.get(index).getC());
+            jBRespuestaD.setText(lista.get(index).getD());
+            puntos++;
+            jBRespuestaA.setEnabled(true);
+            jBRespuestaB.setEnabled(true);
+            jBRespuestaC.setEnabled(true);
+            jBRespuestaD.setEnabled(true);
+            if (puntos >= 3) {
+                JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Faciles");
+                Intermedio p1 = new Intermedio(name, puntos, comodin1, comodin2);
+                p1.setVisible(true);
+                this.setVisible(false);
+            }
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Incorrecto");
+            Final p = new Final(name, puntos);
+            p.setVisible(true);
+            this.setVisible(false);
+        }
+    }//GEN-LAST:event_jBRespuestaAActionPerformed
+
+    private void jBRespuestaBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaBActionPerformed
+        String selected = jBRespuestaB.getText();
+        String correcta = lista.get(index).getCorrecta();
+        if (selected.equals(correcta)) {
+            JOptionPane.showMessageDialog(null, "Correcto");
+            index = (int)(Math.random()*lista.size());
+            if (puntos == 0) {
+                i2 = index;
+                if (i1 == i2) {
+                    while(i1 == i2){
+                        index = (int)(Math.random()*lista.size());
+                        i2 = index;
+                    }
+                }
+            }
+            if (puntos == 1) {
+                i3 = index;
+                if (i2 == i3 || i1 == i3) {
+                    while(i2 == i3 || i1 == i3){
+                        index = (int)(Math.random()*lista.size());
+                        i3 = index;
+                    }
+                }
+            }
+            jLabel1.setText(lista.get(index).getPregunta());
+            jBRespuestaA.setText(lista.get(index).getA());
+            jBRespuestaB.setText(lista.get(index).getB());
+            jBRespuestaC.setText(lista.get(index).getC());
+            jBRespuestaD.setText(lista.get(index).getD());
+            puntos++;
+            jBRespuestaA.setEnabled(true);
+            jBRespuestaB.setEnabled(true);
+            jBRespuestaC.setEnabled(true);
+            jBRespuestaD.setEnabled(true);
+            if (puntos >= 3) {
+                JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Faciles");
+                Intermedio p1 = new Intermedio(name, puntos, comodin1, comodin2);
+                p1.setVisible(true);
+                this.setVisible(false);
+            }
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Incorrecto");
+            Final p = new Final(name, puntos);
+            p.setVisible(true);
+            this.setVisible(false);
+        }
+    }//GEN-LAST:event_jBRespuestaBActionPerformed
+
+    private void jBRespuestaDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRespuestaDActionPerformed
+        String selected = jBRespuestaD.getText();
+        String correcta = lista.get(index).getCorrecta();
+        if (selected.equals(correcta)) {
+            JOptionPane.showMessageDialog(null, "Correcto");
+            index = (int)(Math.random()*lista.size());
+            if (puntos == 0) {
+                i2 = index;
+                if (i1 == i2) {
+                    while(i1 == i2){
+                        index = (int)(Math.random()*lista.size());
+                        i2 = index;
+                    }
+                }
+            }
+            if (puntos == 1) {
+                i3 = index;
+                if (i2 == i3 || i1 == i3) {
+                    while(i2 == i3 || i1 == i3){
+                        index = (int)(Math.random()*lista.size());
+                        i3 = index;
+                    }
+                }
+            }
+            jLabel1.setText(lista.get(index).getPregunta());
+            jBRespuestaA.setText(lista.get(index).getA());
+            jBRespuestaB.setText(lista.get(index).getB());
+            jBRespuestaC.setText(lista.get(index).getC());
+            jBRespuestaD.setText(lista.get(index).getD());
+            puntos++;
+            jBRespuestaA.setEnabled(true);
+            jBRespuestaB.setEnabled(true);
+            jBRespuestaC.setEnabled(true);
+            jBRespuestaD.setEnabled(true);
+            if (puntos >= 3) {
+                JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Faciles");
+                Intermedio p1 = new Intermedio(name, puntos, comodin1, comodin2);
+                p1.setVisible(true);
+                this.setVisible(false);
+            }
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Incorrecto");
+            Final p = new Final(name, puntos);
+            p.setVisible(true);
+            this.setVisible(false);
+        }
+    }//GEN-LAST:event_jBRespuestaDActionPerformed
 
     /**
      * @param args the command line arguments
@@ -648,6 +655,7 @@ public class Intermedio extends javax.swing.JFrame {
     private javax.swing.JButton jBRespuestaD;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JTextArea jTextArea1;
     private keeptoo.KGradientPanel kGradientPanel1;
     // End of variables declaration//GEN-END:variables
