@@ -253,7 +253,7 @@ public class Intermedio extends javax.swing.JFrame {
         kGradientPanel1.setkStartColor(new java.awt.Color(247, 177, 197));
         kGradientPanel1.setPreferredSize(new java.awt.Dimension(1319, 566));
 
-        jButton1.setBackground(new java.awt.Color(239, 138, 170));
+        jButton1.setBackground(new java.awt.Color(247, 177, 197));
         jButton1.setText("50/50");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -261,7 +261,7 @@ public class Intermedio extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(239, 138, 170));
+        jButton2.setBackground(new java.awt.Color(247, 177, 197));
         jButton2.setText("Llamada");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -269,7 +269,6 @@ public class Intermedio extends javax.swing.JFrame {
             }
         });
 
-        jTextArea1.setEditable(false);
         jTextArea1.setBackground(new java.awt.Color(247, 177, 197));
         jTextArea1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jTextArea1.setLineWrap(true);
@@ -285,7 +284,7 @@ public class Intermedio extends javax.swing.JFrame {
         jTextArea1.setOpaque(false);
         jTextArea1.setSelectedTextColor(new java.awt.Color(247, 177, 197));
 
-        jBRespuestaC.setBackground(new java.awt.Color(239, 138, 170));
+        jBRespuestaC.setBackground(new java.awt.Color(247, 177, 197));
         jBRespuestaC.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jBRespuestaC.setText("jButton1");
         jBRespuestaC.addActionListener(new java.awt.event.ActionListener() {
@@ -294,7 +293,7 @@ public class Intermedio extends javax.swing.JFrame {
             }
         });
 
-        jBRespuestaA.setBackground(new java.awt.Color(239, 138, 170));
+        jBRespuestaA.setBackground(new java.awt.Color(247, 177, 197));
         jBRespuestaA.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jBRespuestaA.setText("jButton1");
         jBRespuestaA.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -304,7 +303,7 @@ public class Intermedio extends javax.swing.JFrame {
             }
         });
 
-        jBRespuestaB.setBackground(new java.awt.Color(239, 138, 170));
+        jBRespuestaB.setBackground(new java.awt.Color(247, 177, 197));
         jBRespuestaB.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jBRespuestaB.setText("jButton1");
         jBRespuestaB.addActionListener(new java.awt.event.ActionListener() {
@@ -313,7 +312,7 @@ public class Intermedio extends javax.swing.JFrame {
             }
         });
 
-        jBRespuestaD.setBackground(new java.awt.Color(239, 138, 170));
+        jBRespuestaD.setBackground(new java.awt.Color(247, 177, 197));
         jBRespuestaD.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jBRespuestaD.setText("jButton1");
         jBRespuestaD.addActionListener(new java.awt.event.ActionListener() {
@@ -338,19 +337,19 @@ public class Intermedio extends javax.swing.JFrame {
                     .addComponent(jBRespuestaB, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jBRespuestaD, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(87, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
+            .addGroup(kGradientPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton2)
-                .addGap(87, 87, 87)
-                .addComponent(jButton1)
-                .addGap(64, 64, 64))
-            .addGroup(kGradientPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jTextArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 1116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jTextArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 1116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(kGradientPanel1Layout.createSequentialGroup()
+                        .addComponent(jButton2)
+                        .addGap(54, 54, 54)
+                        .addComponent(jButton1)
+                        .addGap(33, 33, 33)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kGradientPanel1Layout.setVerticalGroup(
@@ -360,9 +359,9 @@ public class Intermedio extends javax.swing.JFrame {
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
-                .addGap(8, 8, 8)
+                .addGap(3, 3, 3)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jTextArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)

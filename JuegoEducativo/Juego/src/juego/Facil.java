@@ -257,7 +257,7 @@ public class Facil extends javax.swing.JFrame {
 
         jLabel1.setText("jLabel1");
 
-        jBRespuestaC.setBackground(new java.awt.Color(239, 138, 170));
+        jBRespuestaC.setBackground(new java.awt.Color(247, 177, 197));
         jBRespuestaC.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jBRespuestaC.setText("jButton1");
         jBRespuestaC.addActionListener(new java.awt.event.ActionListener() {
@@ -266,7 +266,7 @@ public class Facil extends javax.swing.JFrame {
             }
         });
 
-        jBRespuestaA.setBackground(new java.awt.Color(239, 138, 170));
+        jBRespuestaA.setBackground(new java.awt.Color(247, 177, 197));
         jBRespuestaA.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jBRespuestaA.setText("jButton1");
         jBRespuestaA.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -276,7 +276,7 @@ public class Facil extends javax.swing.JFrame {
             }
         });
 
-        jBRespuestaB.setBackground(new java.awt.Color(239, 138, 170));
+        jBRespuestaB.setBackground(new java.awt.Color(247, 177, 197));
         jBRespuestaB.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jBRespuestaB.setText("jButton1");
         jBRespuestaB.addActionListener(new java.awt.event.ActionListener() {
@@ -285,7 +285,7 @@ public class Facil extends javax.swing.JFrame {
             }
         });
 
-        jBRespuestaD.setBackground(new java.awt.Color(239, 138, 170));
+        jBRespuestaD.setBackground(new java.awt.Color(247, 177, 197));
         jBRespuestaD.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jBRespuestaD.setText("jButton1");
         jBRespuestaD.addActionListener(new java.awt.event.ActionListener() {
@@ -294,7 +294,7 @@ public class Facil extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(239, 138, 170));
+        jButton1.setBackground(new java.awt.Color(247, 177, 197));
         jButton1.setText("50/50");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -302,7 +302,7 @@ public class Facil extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(239, 138, 170));
+        jButton2.setBackground(new java.awt.Color(247, 177, 197));
         jButton2.setText("Llamada");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -316,6 +316,20 @@ public class Facil extends javax.swing.JFrame {
         kGradientPanel1.setLayout(kGradientPanel1Layout);
         kGradientPanel1Layout.setHorizontalGroup(
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kGradientPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jBRespuestaC, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBRespuestaA, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jBRespuestaB, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBRespuestaD, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(kGradientPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton2)
@@ -323,22 +337,8 @@ public class Facil extends javax.swing.JFrame {
                 .addComponent(jButton1)
                 .addGap(99, 99, 99))
             .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                .addContainerGap(40, Short.MAX_VALUE)
-                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jBRespuestaC, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBRespuestaA, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 197, Short.MAX_VALUE)
-                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jBRespuestaB, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBRespuestaD, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(40, Short.MAX_VALUE))
-            .addGroup(kGradientPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kGradientPanel1Layout.setVerticalGroup(
@@ -348,11 +348,11 @@ public class Facil extends javax.swing.JFrame {
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2)
                     .addComponent(jButton1))
-                .addGap(5, 5, 5)
+                .addGap(4, 4, 4)
                 .addComponent(jLabel2)
-                .addGap(18, 18, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBRespuestaB, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jBRespuestaA, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
