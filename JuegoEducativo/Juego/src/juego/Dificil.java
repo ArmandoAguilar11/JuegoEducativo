@@ -227,6 +227,10 @@ public class Dificil extends javax.swing.JFrame {
         obj = new Difficult();          
         index = (int)(Math.random()*lista.size());
         i1 = index;
+        if (index == 1 || index == 2 || index == 9 || index == 10 || index == 13) {
+        Imagen p1 = new Imagen(index);
+        p1.setVisible(true);
+        }
         jLabel1.setText(lista.get(index).getPregunta());
         jBRespuestaA.setText(lista.get(index).getA());
         jBRespuestaB.setText(lista.get(index).getB());
@@ -250,7 +254,6 @@ public class Dificil extends javax.swing.JFrame {
         kGradientPanel1 = new keeptoo.KGradientPanel();
         jLabel1 = new javax.swing.JLabel();
         jBRespuestaC = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jBRespuestaA = new javax.swing.JButton();
         jBRespuestaB = new javax.swing.JButton();
         jBRespuestaD = new javax.swing.JButton();
@@ -273,8 +276,6 @@ public class Dificil extends javax.swing.JFrame {
                 jBRespuestaCActionPerformed(evt);
             }
         });
-
-        jLabel2.setText("jLabel2");
 
         jBRespuestaA.setText("jButton1");
         jBRespuestaA.addActionListener(new java.awt.event.ActionListener() {
@@ -320,7 +321,7 @@ public class Dificil extends javax.swing.JFrame {
                     .addGroup(kGradientPanel1Layout.createSequentialGroup()
                         .addGap(40, 40, 40)
                         .addComponent(jBRespuestaC, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 203, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
                         .addComponent(jBRespuestaD, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -328,9 +329,7 @@ public class Dificil extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1))
+                .addComponent(jLabel1)
                 .addGap(303, 303, 303)
                 .addComponent(jButton2)
                 .addGap(76, 76, 76)
@@ -340,23 +339,18 @@ public class Dificil extends javax.swing.JFrame {
                 .addGroup(kGradientPanel1Layout.createSequentialGroup()
                     .addGap(41, 41, 41)
                     .addComponent(jBRespuestaA, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(738, Short.MAX_VALUE)))
+                    .addContainerGap(627, Short.MAX_VALUE)))
         );
         kGradientPanel1Layout.setVerticalGroup(
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addComponent(jLabel1))
-                    .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1)
-                            .addComponent(jButton2))))
-                .addGap(85, 85, 85)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 180, Short.MAX_VALUE)
+                .addContainerGap()
+                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
+                .addGap(34, 34, 34)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 337, Short.MAX_VALUE)
                 .addComponent(jBRespuestaB, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -365,7 +359,7 @@ public class Dificil extends javax.swing.JFrame {
                 .addGap(48, 48, 48))
             .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
-                    .addContainerGap(338, Short.MAX_VALUE)
+                    .addContainerGap(424, Short.MAX_VALUE)
                     .addComponent(jBRespuestaA, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(131, 131, 131)))
         );
@@ -410,6 +404,10 @@ public class Dificil extends javax.swing.JFrame {
                 jBRespuestaB.setEnabled(true);
                 jBRespuestaC.setEnabled(true);
                 jBRespuestaD.setEnabled(true);
+                if (index == 1 || index == 2 || index == 9 || index == 10 || index == 13) {
+                Imagen p1 = new Imagen(index);
+                p1.setVisible(true);
+                }
                 if (puntos >= 9) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Difíciles");
                     Final p1 = new Final(name, puntos);
@@ -460,6 +458,10 @@ public class Dificil extends javax.swing.JFrame {
                 jBRespuestaB.setEnabled(true);
                 jBRespuestaC.setEnabled(true);
                 jBRespuestaD.setEnabled(true);
+                if (index == 1 || index == 9 || index == 10 || index == 13) {
+                Imagen p1 = new Imagen(index);
+                p1.setVisible(true);
+                }
                 if (puntos >= 9) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Difíciles");
                     Final p1 = new Final(name, puntos);
@@ -510,6 +512,10 @@ public class Dificil extends javax.swing.JFrame {
                 jBRespuestaB.setEnabled(true);
                 jBRespuestaC.setEnabled(true);
                 jBRespuestaD.setEnabled(true);
+                if (index == 1 || index == 9 || index == 10 || index == 13) {
+                Imagen p1 = new Imagen(index);
+                p1.setVisible(true);
+                }
                 if (puntos >= 9) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Difíciles");
                     Final p1 = new Final(name, puntos);
@@ -560,6 +566,10 @@ public class Dificil extends javax.swing.JFrame {
                 jBRespuestaB.setEnabled(true);
                 jBRespuestaC.setEnabled(true);
                 jBRespuestaD.setEnabled(true);
+                if (index == 1 || index == 9 || index == 10 || index == 13) {
+                Imagen p1 = new Imagen(index);
+                p1.setVisible(true);
+                }
                 if (puntos >= 9) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Difíciles");
                     Final p1 = new Final(name, puntos);
@@ -656,7 +666,6 @@ public class Dificil extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private keeptoo.KGradientPanel kGradientPanel1;
     // End of variables declaration//GEN-END:variables
 }
