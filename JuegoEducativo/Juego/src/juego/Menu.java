@@ -20,6 +20,7 @@ public class Menu extends javax.swing.JFrame {
         initComponents();
         tipoFuentes = new Fuentes();
         jLabel1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 60));
+        jTextField1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 36)); 
     }
 
     /**

@@ -41,6 +41,9 @@ public class Final extends javax.swing.JFrame {
         jTextField3.setText(nivel);
         jLabel1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 60));
         jLabel3.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 60));
+        jTextField2.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 36));
+        jTextField1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 24));
+        jTextField3.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 24));
     }
 
     private Final() {
