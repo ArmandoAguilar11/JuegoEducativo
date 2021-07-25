@@ -212,6 +212,10 @@ public class Dificil extends javax.swing.JFrame {
         obj = new Difficult();          
         index = (int)(Math.random()*lista.size());
         i1 = index;
+        if (index == 0 || index == 1 || index == 8 || index == 9) {
+            Imagen p1 = new Imagen(index);
+            p1.setVisible(true);
+        }
         jTextArea1.setText(lista.get(index).getPregunta());
         jBRespuestaA.setText(lista.get(index).getA());
         jBRespuestaB.setText(lista.get(index).getB());
@@ -406,6 +410,10 @@ public class Dificil extends javax.swing.JFrame {
                 jBRespuestaB.setEnabled(true);
                 jBRespuestaC.setEnabled(true);
                 jBRespuestaD.setEnabled(true);
+                if (index == 0 || index == 1 || index == 8 || index == 9) {
+                Imagen p1 = new Imagen(index);
+                p1.setVisible(true);
+                }
                 if (puntos >= 9) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Difíciles");
                     Final p1 = new Final(name, puntos);
@@ -456,6 +464,10 @@ public class Dificil extends javax.swing.JFrame {
                 jBRespuestaB.setEnabled(true);
                 jBRespuestaC.setEnabled(true);
                 jBRespuestaD.setEnabled(true);
+                if (index == 0 || index == 1 || index == 8 || index == 9) {
+                Imagen p1 = new Imagen(index);
+                p1.setVisible(true);
+                }
                 if (puntos >= 9) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Difíciles");
                     Final p1 = new Final(name, puntos);
@@ -506,6 +518,10 @@ public class Dificil extends javax.swing.JFrame {
                 jBRespuestaB.setEnabled(true);
                 jBRespuestaC.setEnabled(true);
                 jBRespuestaD.setEnabled(true);
+                if (index == 0 || index == 1 || index == 8 || index == 9) {
+                Imagen p1 = new Imagen(index);
+                p1.setVisible(true);
+                }
                 if (puntos >= 9) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Difíciles");
                     Final p1 = new Final(name, puntos);
@@ -556,6 +572,10 @@ public class Dificil extends javax.swing.JFrame {
                 jBRespuestaB.setEnabled(true);
                 jBRespuestaC.setEnabled(true);
                 jBRespuestaD.setEnabled(true);
+                if (index == 0 || index == 1 || index == 8 || index == 9) {
+                Imagen p1 = new Imagen(index);
+                p1.setVisible(true);
+                }
                 if (puntos >= 9) {
                     JOptionPane.showMessageDialog(null, "Felicidades, terminastes las preguntas Difíciles");
                     Final p1 = new Final(name, puntos);

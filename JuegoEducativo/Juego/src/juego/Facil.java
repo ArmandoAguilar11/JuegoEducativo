@@ -221,7 +221,7 @@ public class Facil extends javax.swing.JFrame {
         jBRespuestaA.setText(lista.get(index).getA());
         jBRespuestaB.setText(lista.get(index).getB());
         jBRespuestaC.setText(lista.get(index).getC());
-        jBRespuestaD.setText(lista.get(index).getD()); 
+        jBRespuestaD.setText(lista.get(index).getD());
     }
 
     private Facil() {

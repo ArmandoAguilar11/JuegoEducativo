@@ -16,20 +16,17 @@ public class Imagen extends javax.swing.JFrame {
      */
     public Imagen(int indexparam) {
         initComponents();
-        if (indexparam == 1) {
+        if (indexparam == 0) {
             jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pre1.png")));
         }
-        else if (indexparam == 2) {
+        else if (indexparam == 1) {
             jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pre2.png")));
         }
-        else if (indexparam == 9) {
+        else if (indexparam == 8) {
             jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pre9.png")));
         }
-        else if (indexparam == 10) {
+        else if (indexparam == 9) {
             jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pre10.png")));
-        }
-        else if (indexparam == 13) {
-            jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pre13.png")));
         }
     }
 
@@ -51,8 +48,6 @@ public class Imagen extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setExtendedState(6);
-        setState(6);
 
         kGradientPanel1.setkEndColor(new java.awt.Color(247, 217, 206));
         kGradientPanel1.setkGradientFocus(60);
