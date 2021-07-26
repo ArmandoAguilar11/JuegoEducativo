@@ -6,6 +6,7 @@
 package juego;
 
 import Fuentes.Fuentes;
+import java.awt.Toolkit;
 
 /**
  *
@@ -21,6 +22,7 @@ public class Final extends javax.swing.JFrame {
 
     public Final(String nameparam, int points) {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Imagenes/icono.png")));
         jTextField2.setText(nameparam);
         tipoFuentes = new Fuentes();
         int puntos = points*100;

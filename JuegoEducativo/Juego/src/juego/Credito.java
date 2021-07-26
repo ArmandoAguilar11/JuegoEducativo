@@ -5,6 +5,7 @@
  */
 package juego;
 import Fuentes.Fuentes;
+import java.awt.Toolkit;
 /**
  *
  * @author Raquel
@@ -18,6 +19,7 @@ public class Credito extends javax.swing.JFrame {
     
     public Credito() {
          initComponents();
+         setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Imagenes/icono.png")));
         tipoFuentes = new Fuentes();
         jLabel1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 60));
     }

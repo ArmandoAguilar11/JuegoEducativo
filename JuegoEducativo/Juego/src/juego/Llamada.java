@@ -5,6 +5,8 @@
  */
 package juego;
 
+import java.awt.Toolkit;
+
 /**
  *
  * @author Armando
@@ -16,6 +18,7 @@ public class Llamada extends javax.swing.JFrame {
      */
     public Llamada(String param) {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Imagenes/icono.png")));
         this.setLocationRelativeTo(null);
         jTextField1.setText(param);
         jTextField1.setEnabled(false);

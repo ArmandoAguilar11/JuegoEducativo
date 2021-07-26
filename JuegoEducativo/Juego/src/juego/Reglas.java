@@ -6,6 +6,7 @@
 package juego;
 
 import Fuentes.Fuentes;
+import java.awt.Toolkit;
 
 /**
  *
@@ -20,6 +21,7 @@ public class Reglas extends javax.swing.JFrame {
     String name;
     public Reglas(String nameparam) {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Imagenes/icono.png")));
         name = nameparam;
         tipoFuentes = new Fuentes();
         jLabel3.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 36));     

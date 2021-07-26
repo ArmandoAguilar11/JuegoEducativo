@@ -5,7 +5,9 @@
  */
 package juego;
 import Fuentes.Fuentes;
+import java.awt.Toolkit;
 import javax.swing.JOptionPane;
+import javax.swing.ImageIcon;
 /**
  *
  * @author Armando
@@ -18,6 +20,7 @@ public class Menu extends javax.swing.JFrame {
     Fuentes tipoFuentes;
     public Menu() {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Imagenes/icono.png")));
         tipoFuentes = new Fuentes();
         jLabel1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 60));
         jTextField1.setFont(tipoFuentes.fuente(tipoFuentes.honey, 0, 36)); 

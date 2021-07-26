@@ -5,6 +5,8 @@
  */
 package juego;
 
+import java.awt.Toolkit;
+
 /**
  *
  * @author Armando
@@ -16,6 +18,7 @@ public class Imagen extends javax.swing.JFrame {
      */
     public Imagen(int indexparam) {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Imagenes/icono.png")));
         if (indexparam == 0) {
             jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pre1.png")));
         }

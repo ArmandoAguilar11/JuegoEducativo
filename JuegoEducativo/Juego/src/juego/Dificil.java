@@ -7,6 +7,7 @@ package juego;
 
 import Clases.Difficult;
 import Fuentes.Fuentes;
+import java.awt.Toolkit;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
@@ -28,6 +29,7 @@ public class Dificil extends javax.swing.JFrame {
     ArrayList<Difficult> lista = new ArrayList();
     public Dificil(String nameparam, int points, boolean com1, boolean com2) {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Imagenes/icono.png")));
         name = nameparam;
         comodin1 = com1;
         comodin2 = com2;

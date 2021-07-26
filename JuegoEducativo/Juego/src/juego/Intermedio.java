@@ -7,6 +7,7 @@ package juego;
 
 import Clases.Intermediate;
 import Fuentes.Fuentes;
+import java.awt.Toolkit;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
@@ -27,6 +28,7 @@ public class Intermedio extends javax.swing.JFrame {
     ArrayList<Intermediate> lista = new ArrayList();
     public Intermedio(String nameparam, int points, boolean com1, boolean com2) {
         initComponents();
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Imagenes/icono.png")));
         name = nameparam;
         comodin1 = com1;
         comodin2 = com2;
