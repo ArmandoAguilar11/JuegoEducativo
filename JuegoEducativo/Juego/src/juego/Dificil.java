@@ -23,24 +23,27 @@ public class Dificil extends javax.swing.JFrame {
     int i1, i2, i3;
     int puntos;
     String name;
+    boolean comodin1, comodin2;
     Fuentes tipoFuentes;
     ArrayList<Difficult> lista = new ArrayList();
     public Dificil(String nameparam, int points, boolean com1, boolean com2) {
         initComponents();
         name = nameparam;
-        if (com1 == false && com2 == false) {
+        comodin1 = com1;
+        comodin2 = com2;
+        if (comodin1 == false && comodin2 == false) {
             jButton2.setEnabled(false);
             jButton1.setEnabled(false);
         }
-        else if (com1 == false && com2 == true) {
+        else if (comodin1 == false && comodin2 == true) {
             jButton2.setEnabled(false);
             jButton1.setEnabled(true);
         }
-        else if (com1 == true && com2 == false) {
+        else if (comodin1 == true && comodin2 == false) {
             jButton2.setEnabled(true);
             jButton1.setEnabled(false);
         }
-        else if (com1 == true && com2 == true) {
+        else if (comodin1 == true && comodin2 == true) {
             jButton2.setEnabled(true);
             jButton1.setEnabled(true);
         }
@@ -293,7 +296,6 @@ public class Dificil extends javax.swing.JFrame {
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/tej.png"))); // NOI18N
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
-        jButton1.setOpaque(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -303,7 +305,6 @@ public class Dificil extends javax.swing.JFrame {
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/te.png"))); // NOI18N
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
-        jButton2.setOpaque(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -383,7 +384,7 @@ public class Dificil extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        getContentPane().add(kGradientPanel1, java.awt.BorderLayout.LINE_END);
+        getContentPane().add(kGradientPanel1, java.awt.BorderLayout.PAGE_START);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
